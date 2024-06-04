@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Draw-poker/1.0.0": {
+        "dependencies": {
+          "Draw-poker.Core": "1.0.0"
+        },
+        "runtime": {
+          "Draw-poker.dll": {}
+        }
+      },
+      "Draw-poker.Core/1.0.0": {
+        "runtime": {
+          "Draw-poker.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Draw-poker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Draw-poker.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

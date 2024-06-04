@@ -1,30 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "Draw-poker.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Draw-poker.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Draw-poker.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Draw-poker.Core/1.0.0": {
+      "type": "project",
+      "path": "../Draw-poker.Core/Draw-poker.Core.csproj",
+      "msbuildProject": "../Draw-poker.Core/Draw-poker.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "Draw-poker.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexandr Petrenko\\.nuget\\packages\\": {},
+    "C:\\Users\\Home\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexandr Petrenko\\source\\repos\\Draw-poker\\Draw-poker\\Draw-poker.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
       "projectName": "Draw-poker",
-      "projectPath": "C:\\Users\\Alexandr Petrenko\\source\\repos\\Draw-poker\\Draw-poker\\Draw-poker.csproj",
-      "packagesPath": "C:\\Users\\Alexandr Petrenko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexandr Petrenko\\source\\repos\\Draw-poker\\Draw-poker\\obj\\",
+      "projectPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
+      "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexandr Petrenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj": {
+              "projectPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -75,7 +98,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

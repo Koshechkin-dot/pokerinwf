@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw-poker", "Draw-poker\Draw-poker.csproj", "{D0613804-6BDF-4B78-A1A1-82968D75ECF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Draw-poker", "Draw-poker\Draw-poker.csproj", "{D0613804-6BDF-4B78-A1A1-82968D75ECF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4} = {A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw-poker.Core", "Draw-poker.Core\Draw-poker.Core.csproj", "{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Draw-poker.Core", "Draw-poker.Core\Draw-poker.Core.csproj", "{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
