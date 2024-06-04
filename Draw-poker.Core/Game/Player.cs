@@ -25,6 +25,23 @@ namespace Draw_poker.Core.Game
         {
             return new List<Card>(cards);
         }
-
+        public List<CardValue> GetCardValues()
+        {
+            List<CardValue> values = new List<CardValue>();
+            foreach (Card card in cards)
+            {
+                values.Add(card.Value);
+            }
+            return values;
+        }
+        public List<CardSuit> GetCardSuits()
+        {
+            List<CardSuit> suits = new List<CardSuit>();
+            foreach (Card card in cards)
+            {
+                suits.Add(card.Suit);
+            }
+            return suits;
+        }
     }
 }

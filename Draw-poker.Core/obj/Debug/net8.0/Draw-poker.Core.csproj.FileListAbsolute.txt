@@ -1,0 +1,12 @@
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\bin\Debug\net8.0\Draw-poker.Core.deps.json
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\bin\Debug\net8.0\Draw-poker.Core.dll
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\bin\Debug\net8.0\Draw-poker.Core.pdb
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.AssemblyInfo.cs
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.sourcelink.json
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.dll
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\refint\Draw-poker.Core.dll
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\Draw-poker.Core.pdb
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker.Core\obj\Debug\net8.0\ref\Draw-poker.Core.dll
