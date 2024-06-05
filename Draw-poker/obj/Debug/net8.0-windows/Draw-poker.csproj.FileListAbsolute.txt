@@ -19,3 +19,4 @@ C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-p
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\bin\Debug\net8.0-windows\Draw-poker.Core.dll
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\bin\Debug\net8.0-windows\Draw-poker.Core.pdb
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.csproj.Up2Date
+C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Properties.Resources.resources

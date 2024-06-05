@@ -1,4 +1,5 @@
 ﻿using Draw_poker.Core.CardsLogic;
+using Draw_poker;
 
 namespace Draw_poker.Core.Game
 {
@@ -31,67 +32,9 @@ namespace Draw_poker.Core.Game
         {
             return new List<Card>(cards);
         }
-        public List<CardValue> GetCardValues()
-        {
-            List<CardValue> values = new List<CardValue>();
-            foreach (Card card in cards)
-            {
-                values.Add(card.Value);
-            }
-            return values;
-        }
-        public List<CardSuit> GetCardSuits()
-        {
-            List<CardSuit> suits = new List<CardSuit>();
-            foreach (Card card in cards)
-            {
-                suits.Add(card.Suit);
-            }
-            return suits;
-        }
-        public void Fold()
+        public void ClearCards()
         {
             cards.Clear();
-            Bet = 0;
         }
-        public bool Call(int _bet)
-        {
-            if (_bet <= Cash)
-            {
-                Cash -= (_bet - Bet);
-                Bet = _bet;
-                return true;
-            }
-            return false;
-        }
-        public bool Raise(ref GameProcess gp, int _new_bet)
-        {
-            if (_new_bet <= Cash && _new_bet > Bet)
-            {
-                Cash -= (_new_bet - Bet);
-                gp._bet = _new_bet;
-                Bet = _new_bet;
-                return true;
-            }
-            return false;
-        }
-        // Для Ботов
-        public void Action(ref GameProcess gp, int _new_bet)
-        {
-            Random random = new Random();
-            if (random.Next(0, 100) % 2 == 1)
-            {
-                Raise(ref gp, _new_bet + 10);
-            }
-            else
-            {
-                Call(_new_bet);
-            }
-            if (!Call(_new_bet))
-            {
-                Fold();
-            }
-        }
-        
     }
 }

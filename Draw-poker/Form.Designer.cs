@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             FoldB = new Button();
             CallB = new Button();
@@ -51,11 +52,17 @@
             label13 = new Label();
             Bank = new Label();
             RaiseValue = new TextBox();
+            playerHand = new ImageList(components);
+            Card0 = new CheckBox();
+            Card1 = new CheckBox();
+            Card2 = new CheckBox();
+            Card3 = new CheckBox();
+            Card4 = new CheckBox();
             SuspendLayout();
             // 
             // FoldB
             // 
-            FoldB.Location = new Point(12, 406);
+            FoldB.Location = new Point(12, 526);
             FoldB.Name = "FoldB";
             FoldB.Size = new Size(75, 23);
             FoldB.TabIndex = 0;
@@ -65,7 +72,7 @@
             // 
             // CallB
             // 
-            CallB.Location = new Point(93, 406);
+            CallB.Location = new Point(93, 526);
             CallB.Name = "CallB";
             CallB.Size = new Size(75, 23);
             CallB.TabIndex = 1;
@@ -75,7 +82,7 @@
             // 
             // RaiseB
             // 
-            RaiseB.Location = new Point(174, 406);
+            RaiseB.Location = new Point(174, 526);
             RaiseB.Name = "RaiseB";
             RaiseB.Size = new Size(75, 23);
             RaiseB.TabIndex = 2;
@@ -243,10 +250,81 @@
             // 
             // RaiseValue
             // 
-            RaiseValue.Location = new Point(255, 407);
+            RaiseValue.Location = new Point(255, 527);
             RaiseValue.Name = "RaiseValue";
             RaiseValue.Size = new Size(74, 23);
             RaiseValue.TabIndex = 21;
+            // 
+            // playerHand
+            // 
+            playerHand.ColorDepth = ColorDepth.Depth32Bit;
+            playerHand.ImageStream = (ImageListStreamer)resources.GetObject("playerHand.ImageStream");
+            playerHand.TransparentColor = Color.Transparent;
+            playerHand.Images.SetKeyName(0, "2_of_clubs.png");
+            playerHand.Images.SetKeyName(1, "4_of_diamonds.png");
+            playerHand.Images.SetKeyName(2, "king_of_clubs2.png");
+            playerHand.Images.SetKeyName(3, "ace_of_spades.png");
+            playerHand.Images.SetKeyName(4, "10_of_spades.png");
+            // 
+            // Card0
+            // 
+            Card0.AutoSize = true;
+            Card0.Enabled = false;
+            Card0.ImageIndex = 0;
+            Card0.ImageList = playerHand;
+            Card0.Location = new Point(692, 12);
+            Card0.Name = "Card0";
+            Card0.Size = new Size(80, 94);
+            Card0.TabIndex = 22;
+            Card0.UseVisualStyleBackColor = true;
+            // 
+            // Card1
+            // 
+            Card1.AutoSize = true;
+            Card1.Enabled = false;
+            Card1.ImageIndex = 2;
+            Card1.ImageList = playerHand;
+            Card1.Location = new Point(692, 118);
+            Card1.Name = "Card1";
+            Card1.Size = new Size(80, 94);
+            Card1.TabIndex = 23;
+            Card1.UseVisualStyleBackColor = true;
+            // 
+            // Card2
+            // 
+            Card2.AutoSize = true;
+            Card2.Enabled = false;
+            Card2.ImageIndex = 4;
+            Card2.ImageList = playerHand;
+            Card2.Location = new Point(692, 318);
+            Card2.Name = "Card2";
+            Card2.Size = new Size(80, 94);
+            Card2.TabIndex = 24;
+            Card2.UseVisualStyleBackColor = true;
+            // 
+            // Card3
+            // 
+            Card3.AutoSize = true;
+            Card3.Enabled = false;
+            Card3.ImageIndex = 1;
+            Card3.ImageList = playerHand;
+            Card3.Location = new Point(692, 218);
+            Card3.Name = "Card3";
+            Card3.Size = new Size(80, 94);
+            Card3.TabIndex = 25;
+            Card3.UseVisualStyleBackColor = true;
+            // 
+            // Card4
+            // 
+            Card4.AutoSize = true;
+            Card4.Enabled = false;
+            Card4.ImageIndex = 3;
+            Card4.ImageList = playerHand;
+            Card4.Location = new Point(692, 418);
+            Card4.Name = "Card4";
+            Card4.Size = new Size(80, 94);
+            Card4.TabIndex = 26;
+            Card4.UseVisualStyleBackColor = true;
             // 
             // Form
             // 
@@ -254,7 +332,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(624, 441);
+            ClientSize = new Size(784, 561);
+            Controls.Add(Card4);
+            Controls.Add(Card3);
+            Controls.Add(Card2);
+            Controls.Add(Card1);
+            Controls.Add(Card0);
             Controls.Add(RaiseValue);
             Controls.Add(Bank);
             Controls.Add(label13);
@@ -310,5 +393,11 @@
         private Label label13;
         private Label Bank;
         private TextBox RaiseValue;
+        public ImageList playerHand;
+        private CheckBox Card0;
+        private CheckBox Card1;
+        private CheckBox Card2;
+        private CheckBox Card3;
+        private CheckBox Card4;
     }
 }
