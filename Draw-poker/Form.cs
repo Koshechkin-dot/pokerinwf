@@ -8,34 +8,46 @@ namespace Draw_poker
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        //test
-        private Player p1 = new(1000);
-        private Player p2 = new(1000);
-        private DeckOfCards deck = new DeckOfCards();
+        int num_of_players;
+        GameProcess gameProcess;
 
         public Form()
         {
             InitializeComponent();
         }
 
-        private void Form_Load(object sender, EventArgs e)
+        public void UpdateLabels(GameProcess gameProcess)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < gameProcess._players.Length; i++)
             {
-                p1.AddCard(deck.GetCard());
-                p2.AddCard(deck.GetCard());
+
             }
-
-
-            BotCards.Items.Add(String.Join(", ", p1.GetCardValues()));
-            PlayerCards.Items.Add(String.Join(", ", p2.GetCardValues()));
-            BotCards.Items.Add(String.Join(", ", p1.GetCardSuits()));
-            PlayerCards.Items.Add(String.Join(", ", p2.GetCardSuits()));
         }
 
-        private void Compare_Click(object sender, EventArgs e)
+        private void Form_Load(object sender, EventArgs e)
         {
-            
+            int num_of_players = 4;
+            GameProcess gameProcess = new(num_of_players, 1000);
+            gameProcess.Start();
+            //BotCards.Items.Add(String.Join(", ", p1.GetCardValues()));
+            //PlayerCards.Items.Add(String.Join(", ", p2.GetCardValues()));
+            //BotCards.Items.Add(String.Join(", ", p1.GetCardSuits()));
+            //PlayerCards.Items.Add(String.Join(", ", p2.GetCardSuits()));
+        }
+
+        private void FoldB_Click(object sender, EventArgs e)
+        {
+            gameProcess._players[gameProcess._plr_pos].Fold();
+        }
+
+        private void CallB_Click(object sender, EventArgs e)
+        {
+            gameProcess._players[gameProcess._plr_pos].Call(gameProcess._bet);
+        }
+
+        private void RaiseB_Click(object sender, EventArgs e)
+        {
+            gameProcess._players[gameProcess._plr_pos].Raise(ref gameProcess, Int32.Parse(RaiseValue.Text));
         }
     }
 }
