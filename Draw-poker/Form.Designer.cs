@@ -34,12 +34,8 @@
             CallB = new Button();
             RaiseB = new Button();
             Player0 = new Label();
-            Cards0 = new ListView();
-            Cards1 = new ListView();
             Player1 = new Label();
-            Cards2 = new ListView();
             Player2 = new Label();
-            Cards3 = new ListView();
             Player3 = new Label();
             Cash0 = new Label();
             Cash1 = new Label();
@@ -99,60 +95,28 @@
             Player0.TabIndex = 3;
             Player0.Text = "Player";
             // 
-            // Cards0
-            // 
-            Cards0.Location = new Point(12, 27);
-            Cards0.Name = "Cards0";
-            Cards0.Size = new Size(237, 53);
-            Cards0.TabIndex = 4;
-            Cards0.UseCompatibleStateImageBehavior = false;
-            // 
-            // Cards1
-            // 
-            Cards1.Location = new Point(12, 101);
-            Cards1.Name = "Cards1";
-            Cards1.Size = new Size(237, 53);
-            Cards1.TabIndex = 6;
-            Cards1.UseCompatibleStateImageBehavior = false;
-            // 
             // Player1
             // 
             Player1.AutoSize = true;
-            Player1.Location = new Point(12, 83);
+            Player1.Location = new Point(12, 24);
             Player1.Name = "Player1";
             Player1.Size = new Size(39, 15);
             Player1.TabIndex = 5;
             Player1.Text = "Player";
             // 
-            // Cards2
-            // 
-            Cards2.Location = new Point(12, 175);
-            Cards2.Name = "Cards2";
-            Cards2.Size = new Size(237, 53);
-            Cards2.TabIndex = 8;
-            Cards2.UseCompatibleStateImageBehavior = false;
-            // 
             // Player2
             // 
             Player2.AutoSize = true;
-            Player2.Location = new Point(12, 157);
+            Player2.Location = new Point(12, 39);
             Player2.Name = "Player2";
             Player2.Size = new Size(39, 15);
             Player2.TabIndex = 7;
             Player2.Text = "Player";
             // 
-            // Cards3
-            // 
-            Cards3.Location = new Point(12, 249);
-            Cards3.Name = "Cards3";
-            Cards3.Size = new Size(237, 53);
-            Cards3.TabIndex = 10;
-            Cards3.UseCompatibleStateImageBehavior = false;
-            // 
             // Player3
             // 
             Player3.AutoSize = true;
-            Player3.Location = new Point(12, 231);
+            Player3.Location = new Point(12, 54);
             Player3.Name = "Player3";
             Player3.Size = new Size(39, 15);
             Player3.TabIndex = 9;
@@ -170,7 +134,7 @@
             // Cash1
             // 
             Cash1.AutoSize = true;
-            Cash1.Location = new Point(57, 83);
+            Cash1.Location = new Point(57, 24);
             Cash1.Name = "Cash1";
             Cash1.Size = new Size(38, 15);
             Cash1.TabIndex = 12;
@@ -179,7 +143,7 @@
             // Cash2
             // 
             Cash2.AutoSize = true;
-            Cash2.Location = new Point(57, 157);
+            Cash2.Location = new Point(57, 39);
             Cash2.Name = "Cash2";
             Cash2.Size = new Size(38, 15);
             Cash2.TabIndex = 13;
@@ -188,7 +152,7 @@
             // Cash3
             // 
             Cash3.AutoSize = true;
-            Cash3.Location = new Point(57, 231);
+            Cash3.Location = new Point(57, 54);
             Cash3.Name = "Cash3";
             Cash3.Size = new Size(38, 15);
             Cash3.TabIndex = 14;
@@ -206,7 +170,7 @@
             // Bet1
             // 
             Bet1.AutoSize = true;
-            Bet1.Location = new Point(101, 83);
+            Bet1.Location = new Point(101, 24);
             Bet1.Name = "Bet1";
             Bet1.Size = new Size(44, 15);
             Bet1.TabIndex = 16;
@@ -215,7 +179,7 @@
             // Bet2
             // 
             Bet2.AutoSize = true;
-            Bet2.Location = new Point(101, 157);
+            Bet2.Location = new Point(101, 39);
             Bet2.Name = "Bet2";
             Bet2.Size = new Size(44, 15);
             Bet2.TabIndex = 17;
@@ -224,7 +188,7 @@
             // Bet3
             // 
             Bet3.AutoSize = true;
-            Bet3.Location = new Point(101, 231);
+            Bet3.Location = new Point(101, 54);
             Bet3.Name = "Bet3";
             Bet3.Size = new Size(44, 15);
             Bet3.TabIndex = 18;
@@ -233,7 +197,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(12, 305);
+            label13.Location = new Point(12, 508);
             label13.Name = "label13";
             label13.Size = new Size(33, 15);
             label13.TabIndex = 19;
@@ -242,7 +206,7 @@
             // Bank
             // 
             Bank.AutoSize = true;
-            Bank.Location = new Point(51, 305);
+            Bank.Location = new Point(51, 508);
             Bank.Name = "Bank";
             Bank.Size = new Size(44, 15);
             Bank.TabIndex = 20;
@@ -349,13 +313,9 @@
             Controls.Add(Cash2);
             Controls.Add(Cash1);
             Controls.Add(Cash0);
-            Controls.Add(Cards3);
             Controls.Add(Player3);
-            Controls.Add(Cards2);
             Controls.Add(Player2);
-            Controls.Add(Cards1);
             Controls.Add(Player1);
-            Controls.Add(Cards0);
             Controls.Add(Player0);
             Controls.Add(RaiseB);
             Controls.Add(CallB);
@@ -375,12 +335,8 @@
         private Button CallB;
         private Button RaiseB;
         private Label Player0;
-        private ListView Cards0;
-        private ListView Cards1;
         private Label Player1;
-        private ListView Cards2;
         private Label Player2;
-        private ListView Cards3;
         private Label Player3;
         private Label Cash0;
         private Label Cash1;

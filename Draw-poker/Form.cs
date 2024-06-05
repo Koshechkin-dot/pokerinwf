@@ -24,8 +24,8 @@ namespace Draw_poker
             int num_of_players = 4;
             int start_cash = 1000;
             gameProcess.Start(num_of_players, start_cash, containerClass);
+            gameProcess.GameIter(containerClass);
             gameProcess.UpdateLabels(containerClass);
-            gameProcess.GameCycle(containerClass);
         }
 
         private void FoldB_Click(object sender, EventArgs e)

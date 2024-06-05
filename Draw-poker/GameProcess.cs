@@ -34,7 +34,8 @@ namespace Draw_poker
 
         public void Start(int players, int start_cash, ContainerClass cc)
         {
-            _plr_pos = 0;
+            Random rnd = new Random();
+            _plr_pos = rnd.Next(0, players - 1);
             _game_bank = 0;
             _bet = 25; //ante
             _start_cash = start_cash;
@@ -55,10 +56,9 @@ namespace Draw_poker
                     plr._player.AddCard(_deckOfCards.GetCard());
                 }
             }
-            _bet = 25;
         }
 
-        public void GameCycle(ContainerClass cc)
+        public void GameIter(ContainerClass cc)
         {
             cc.buttons.Where(t => t.Name == $"FoldB").First().Enabled = false;
             cc.buttons.Where(t => t.Name == $"CallB").First().Enabled = false;

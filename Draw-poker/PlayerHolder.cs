@@ -43,7 +43,7 @@ namespace Draw_poker
             {
                 _player.Cash -= (_new_bet - _player.Bet);
                 gp._bet = _new_bet;
-                gp._game_bank += _new_bet;
+                gp._game_bank += _new_bet - _player.Bet;
                 _player.Bet = _new_bet;
                 return true;
             }
@@ -52,18 +52,18 @@ namespace Draw_poker
         // Для Ботов
         public void Action(GameProcess gp, int _new_bet)
         {
+            if (!Call(gp, _new_bet))
+            {
+                Fold();
+            }
             Random random = new Random();
-            if (random.Next(0, 100) % 2 == 1)
+            if (random.Next(0, 100) < 20)
             {
                 Raise(ref gp, _new_bet + 10);
             }
             else
             {
                 Call(gp, _new_bet);
-            }
-            if (!Call(gp, _new_bet))
-            {
-                Fold();
             }
         }
     }
