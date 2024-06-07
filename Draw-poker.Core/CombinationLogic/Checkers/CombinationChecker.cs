@@ -4,13 +4,13 @@ using Draw_poker.Core.Game;
 
 namespace Draw_poker.Core.CombinationLogic.Checkers
 {
-    public abstract class CombinationChecker<T> where T : CheckerResult
+    public abstract class CombinationChecker<T> : ICombinationChecker where T : CheckerResult
     {
-        public abstract T? Check(Player player);
+        public abstract CheckerResult? Check(Player player);
 
         protected List<CardValue> ConvertToValues(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             List<CardValue> values = new List<CardValue>();
             foreach (Card card in hand)
             {
@@ -20,7 +20,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
         }
         protected List<CardSuit> ConvertToSuits(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             List<CardSuit> suits = new List<CardSuit>();
             foreach (Card card in hand)
             {

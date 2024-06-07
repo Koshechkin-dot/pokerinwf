@@ -19,32 +19,34 @@ namespace Draw_poker
 
         private void Form_Load(object sender, EventArgs e)
         {
-            containerClass = new ContainerClass(this);
-            gameProcess = GameProcess.gp;
-            int num_of_players = 4;
             int start_cash = 1000;
-            gameProcess.Start(num_of_players, start_cash, containerClass);
-            gameProcess.GameIter(containerClass);
-            gameProcess.UpdateLabels(containerClass);
+            containerClass = new ContainerClass(this);
+            gameProcess = GameProcess.Instance;
+            
+            gameProcess.Initialize(start_cash, containerClass);
+            
+            //gameProcess.Start(num_of_players, start_cash, containerClass);
+            //gameProcess.GameIter(containerClass);
+            //gameProcess.UpdateLabels(containerClass);
         }
 
         private void FoldB_Click(object sender, EventArgs e)
         {
-            gameProcess._players[gameProcess._plr_pos].Fold();
-            gameProcess.UpdateLabels(containerClass);
+            //gameProcess._players[gameProcess._plr_pos].Fold();
+            //gameProcess.UpdateLabels(containerClass);
         }
 
         private void CallB_Click(object sender, EventArgs e)
         {
-            gameProcess._players[gameProcess._plr_pos].Call(gameProcess, gameProcess._bet);
-            gameProcess.UpdateLabels(containerClass);
+            //gameProcess._players[gameProcess._plr_pos].Call(gameProcess._bet);
+            //gameProcess.UpdateLabels(containerClass);
         }
 
         private void RaiseB_Click(object sender, EventArgs e)
         {
-            Int32.TryParse(RaiseValue.Text, out int result);
-            gameProcess._players[gameProcess._plr_pos].Raise(ref gameProcess, result);
-            gameProcess.UpdateLabels(containerClass);
+            //Int32.TryParse(RaiseValue.Text, out int result);
+            //gameProcess._players[gameProcess._plr_pos].Raise(result);
+            //gameProcess.UpdateLabels(containerClass);
         }
     }
 }

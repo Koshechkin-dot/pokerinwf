@@ -8,7 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override RoyalFlushCheckerResult? Check(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             var suit = hand[0].Suit;
             if (hand.Count(cards => cards.Suit == suit) < 5)
             {

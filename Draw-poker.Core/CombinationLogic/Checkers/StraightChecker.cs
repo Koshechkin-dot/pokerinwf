@@ -4,7 +4,7 @@ using Draw_poker.Core.Game;
 
 namespace Draw_poker.Core.CombinationLogic.Checkers
 {
-    internal class StraightChecker : CombinationChecker<StraightCheckerResult>
+    public class StraightChecker : CombinationChecker<StraightCheckerResult>
     {
         public override StraightCheckerResult? Check(Player player)
         {

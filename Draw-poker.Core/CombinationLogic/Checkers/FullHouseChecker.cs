@@ -8,7 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override FullHouseCheckerResult? Check(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             int? triple = hand.GroupBy(card => card.Value)
                               .Where(group => group.Count() == 3)
                               .Select(group => (int?)group.Key)

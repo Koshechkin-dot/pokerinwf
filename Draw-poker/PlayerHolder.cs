@@ -1,69 +1,88 @@
-﻿using Draw_poker.Core.Game;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Draw_poker.Core.CardsLogic;
+using Draw_poker.Core.Game;
 
 namespace Draw_poker
 {
     public class PlayerHolder
     {
-        public Player _player { get; }
-        public Label _name { get; }
-        public Label _cash { get; }
-        public Label _bet { get; }
-        public PlayerHolder(Player player, Label name, Label cash, Label bet)
+        public Player Player { get; }
+        public Label Cash { get; }
+        public Label Bet { get; }
+        public PlayerHolder(Player player, Label cash, Label bet)
         {
-            _player = player;
-            _name = name;
-            _cash = cash;
-            _bet = bet;
+            Player = player;
+            Cash = cash;
+            Bet = bet;
         }
         public void Fold()
         {
-            _player.ClearCards();
-            _player.Bet = 0;
+            ClearCards();
+            Player.Bet = 0;
         }
-        public bool Call(GameProcess gp, int _bet)
+        public bool Call(int _bet)
         {
-            if (_bet <= _player.Cash + _player.Bet && _bet > _player.Bet)
+            var gp = GameProcess.Instance;
+            if (_bet <= Player.Cash + Player.Bet && _bet > Player.Bet)
             {
-                _player.Cash -= (_bet - _player.Bet);
-                _player.Bet = _bet;
-                gp._game_bank += _bet;
+                Player.Cash -= (_bet - Player.Bet);
+                Player.Bet = _bet;
+                gp.GameBank.Bank += _bet;
                 return true;
             }
             return false;
         }
-        public bool Raise(ref GameProcess gp, int _new_bet)
+        public bool Raise(int _new_bet)
         {
-            if (_new_bet <= _player.Cash + _player.Bet && _new_bet > gp._bet)
+            var gp = GameProcess.Instance;
+            if (_new_bet <= Player.Cash + Player.Bet && _new_bet > gp._bet)
             {
-                _player.Cash -= (_new_bet - _player.Bet);
+                Player.Cash -= (_new_bet - Player.Bet);
                 gp._bet = _new_bet;
-                gp._game_bank += _new_bet - _player.Bet;
-                _player.Bet = _new_bet;
+                gp.GameBank.Bank += _new_bet - Player.Bet;
+                Player.Bet = _new_bet;
                 return true;
             }
             return false;
         }
-        // Для Ботов
-        public void Action(GameProcess gp, int _new_bet)
+
+        public void AddCard(Card card)
         {
-            if (!Call(gp, _new_bet))
+            if (Player.Cards.Count >= Player.MAX_CARDS_IN_HAND)
+            {
+                throw new ArgumentOutOfRangeException("Can't add card to full hand");
+            }
+            Player.Cards.Add(card);
+        }
+        public void ReplaceCard(Card card, int index)
+        {
+            Player.Cards.Remove(Player.Cards[index]);
+            Player.Cards.Insert(index, card);
+        }
+        public void ClearCards()
+        {
+            Player.Cards.Clear();
+        }
+        public void UpdateLabel()
+        {
+            Cash.Text = Player.Cash.ToString();
+            Bet.Text = Player.Bet.ToString();
+        }
+
+        // Для Ботов
+        public void Action(int _new_bet)
+        {
+            if (!Call(_new_bet))
             {
                 Fold();
             }
             Random random = new Random();
             if (random.Next(0, 100) < 20)
             {
-                Raise(ref gp, _new_bet + 10);
+                Raise(_new_bet + 10);
             }
             else
             {
-                Call(gp, _new_bet);
+                Call(_new_bet);
             }
         }
     }

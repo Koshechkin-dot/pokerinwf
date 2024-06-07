@@ -7,7 +7,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override PairCheckerResult? Check(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             var pairs = hand.GroupBy(card => card.Value)
                             .Where(group => group.Count() == 1)
                             .Select(v => v.Key).ToList();

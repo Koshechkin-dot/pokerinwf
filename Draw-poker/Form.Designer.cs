@@ -34,17 +34,8 @@
             CallB = new Button();
             RaiseB = new Button();
             Player0 = new Label();
-            Player1 = new Label();
-            Player2 = new Label();
-            Player3 = new Label();
-            Cash0 = new Label();
-            Cash1 = new Label();
-            Cash2 = new Label();
-            Cash3 = new Label();
-            Bet0 = new Label();
-            Bet1 = new Label();
-            Bet2 = new Label();
-            Bet3 = new Label();
+            BotBet = new Label();
+            PlayerBet = new Label();
             label13 = new Label();
             Bank = new Label();
             RaiseValue = new TextBox();
@@ -54,6 +45,9 @@
             Card2 = new CheckBox();
             Card3 = new CheckBox();
             Card4 = new CheckBox();
+            PlayerCash = new Label();
+            Player3 = new Label();
+            BotCash = new Label();
             SuspendLayout();
             // 
             // FoldB
@@ -95,104 +89,23 @@
             Player0.TabIndex = 3;
             Player0.Text = "Player";
             // 
-            // Player1
+            // BotBet
             // 
-            Player1.AutoSize = true;
-            Player1.Location = new Point(12, 24);
-            Player1.Name = "Player1";
-            Player1.Size = new Size(39, 15);
-            Player1.TabIndex = 5;
-            Player1.Text = "Player";
+            BotBet.AutoSize = true;
+            BotBet.Location = new Point(101, 9);
+            BotBet.Name = "BotBet";
+            BotBet.Size = new Size(38, 15);
+            BotBet.TabIndex = 15;
+            BotBet.Text = "label9";
             // 
-            // Player2
+            // PlayerBet
             // 
-            Player2.AutoSize = true;
-            Player2.Location = new Point(12, 39);
-            Player2.Name = "Player2";
-            Player2.Size = new Size(39, 15);
-            Player2.TabIndex = 7;
-            Player2.Text = "Player";
-            // 
-            // Player3
-            // 
-            Player3.AutoSize = true;
-            Player3.Location = new Point(12, 54);
-            Player3.Name = "Player3";
-            Player3.Size = new Size(39, 15);
-            Player3.TabIndex = 9;
-            Player3.Text = "Player";
-            // 
-            // Cash0
-            // 
-            Cash0.AutoSize = true;
-            Cash0.Location = new Point(57, 9);
-            Cash0.Name = "Cash0";
-            Cash0.Size = new Size(38, 15);
-            Cash0.TabIndex = 11;
-            Cash0.Text = "label5";
-            // 
-            // Cash1
-            // 
-            Cash1.AutoSize = true;
-            Cash1.Location = new Point(57, 24);
-            Cash1.Name = "Cash1";
-            Cash1.Size = new Size(38, 15);
-            Cash1.TabIndex = 12;
-            Cash1.Text = "label6";
-            // 
-            // Cash2
-            // 
-            Cash2.AutoSize = true;
-            Cash2.Location = new Point(57, 39);
-            Cash2.Name = "Cash2";
-            Cash2.Size = new Size(38, 15);
-            Cash2.TabIndex = 13;
-            Cash2.Text = "label7";
-            // 
-            // Cash3
-            // 
-            Cash3.AutoSize = true;
-            Cash3.Location = new Point(57, 54);
-            Cash3.Name = "Cash3";
-            Cash3.Size = new Size(38, 15);
-            Cash3.TabIndex = 14;
-            Cash3.Text = "label8";
-            // 
-            // Bet0
-            // 
-            Bet0.AutoSize = true;
-            Bet0.Location = new Point(101, 9);
-            Bet0.Name = "Bet0";
-            Bet0.Size = new Size(38, 15);
-            Bet0.TabIndex = 15;
-            Bet0.Text = "label9";
-            // 
-            // Bet1
-            // 
-            Bet1.AutoSize = true;
-            Bet1.Location = new Point(101, 24);
-            Bet1.Name = "Bet1";
-            Bet1.Size = new Size(44, 15);
-            Bet1.TabIndex = 16;
-            Bet1.Text = "label10";
-            // 
-            // Bet2
-            // 
-            Bet2.AutoSize = true;
-            Bet2.Location = new Point(101, 39);
-            Bet2.Name = "Bet2";
-            Bet2.Size = new Size(44, 15);
-            Bet2.TabIndex = 17;
-            Bet2.Text = "label11";
-            // 
-            // Bet3
-            // 
-            Bet3.AutoSize = true;
-            Bet3.Location = new Point(101, 54);
-            Bet3.Name = "Bet3";
-            Bet3.Size = new Size(44, 15);
-            Bet3.TabIndex = 18;
-            Bet3.Text = "label12";
+            PlayerBet.AutoSize = true;
+            PlayerBet.Location = new Point(101, 54);
+            PlayerBet.Name = "PlayerBet";
+            PlayerBet.Size = new Size(44, 15);
+            PlayerBet.TabIndex = 18;
+            PlayerBet.Text = "label12";
             // 
             // label13
             // 
@@ -290,6 +203,33 @@
             Card4.TabIndex = 26;
             Card4.UseVisualStyleBackColor = true;
             // 
+            // PlayerCash
+            // 
+            PlayerCash.AutoSize = true;
+            PlayerCash.Location = new Point(57, 54);
+            PlayerCash.Name = "PlayerCash";
+            PlayerCash.Size = new Size(38, 15);
+            PlayerCash.TabIndex = 14;
+            PlayerCash.Text = "label8";
+            // 
+            // Player3
+            // 
+            Player3.AutoSize = true;
+            Player3.Location = new Point(12, 54);
+            Player3.Name = "Player3";
+            Player3.Size = new Size(39, 15);
+            Player3.TabIndex = 9;
+            Player3.Text = "Player";
+            // 
+            // BotCash
+            // 
+            BotCash.AutoSize = true;
+            BotCash.Location = new Point(57, 9);
+            BotCash.Name = "BotCash";
+            BotCash.Size = new Size(38, 15);
+            BotCash.TabIndex = 27;
+            BotCash.Text = "label9";
+            // 
             // Form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -297,6 +237,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(784, 561);
+            Controls.Add(BotCash);
             Controls.Add(Card4);
             Controls.Add(Card3);
             Controls.Add(Card2);
@@ -305,17 +246,10 @@
             Controls.Add(RaiseValue);
             Controls.Add(Bank);
             Controls.Add(label13);
-            Controls.Add(Bet3);
-            Controls.Add(Bet2);
-            Controls.Add(Bet1);
-            Controls.Add(Bet0);
-            Controls.Add(Cash3);
-            Controls.Add(Cash2);
-            Controls.Add(Cash1);
-            Controls.Add(Cash0);
+            Controls.Add(PlayerBet);
+            Controls.Add(BotBet);
+            Controls.Add(PlayerCash);
             Controls.Add(Player3);
-            Controls.Add(Player2);
-            Controls.Add(Player1);
             Controls.Add(Player0);
             Controls.Add(RaiseB);
             Controls.Add(CallB);
@@ -337,15 +271,14 @@
         private Label Player0;
         private Label Player1;
         private Label Player2;
-        private Label Player3;
         private Label Cash0;
         private Label Cash1;
         private Label Cash2;
         private Label Cash3;
-        private Label Bet0;
+        private Label BotBet;
         private Label Bet1;
         private Label Bet2;
-        private Label Bet3;
+        private Label PlayerBet;
         private Label label13;
         private Label Bank;
         private TextBox RaiseValue;
@@ -355,5 +288,8 @@
         private CheckBox Card2;
         private CheckBox Card3;
         private CheckBox Card4;
+        private Label PlayerCash;
+        private Label Player3;
+        private Label BotCash;
     }
 }

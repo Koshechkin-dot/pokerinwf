@@ -8,7 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override FourOfAKindCheckerResult? Check(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             foreach (var card in hand)
             {
                 if (hand.Count(cards => cards.Value == card.Value) == 4)

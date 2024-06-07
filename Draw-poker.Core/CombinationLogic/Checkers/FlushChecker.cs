@@ -4,11 +4,11 @@ using Draw_poker.Core.Game;
 
 namespace Draw_poker.Core.CombinationLogic.Checkers
 {
-    internal class FlushChecker : CombinationChecker<FlushCheckerResult>
+    public class FlushChecker : CombinationChecker<FlushCheckerResult>
     {
         public override FlushCheckerResult? Check(Player player)
         {
-            var hand = player.GetCards();
+            var hand = player.Cards;
             CardSuit suit = hand[0].Suit;
             if(hand.Count(card => card.Suit == suit) == 5 )
             {
