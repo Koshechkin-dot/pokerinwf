@@ -20,7 +20,6 @@ C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\bin\Debug\net8.0-windows\Draw-p
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.csproj.Up2Date
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Properties.Resources.resources
 D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.csproj.AssemblyReference.cache
-D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Form.resources
 D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Properties.Resources.resources
 D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.csproj.GenerateResource.cache
 D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.GeneratedMSBuildEditorConfig.editorconfig
@@ -43,3 +42,5 @@ D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw-poker.genruntimeconfig.cac
 D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\ref\Draw-poker.dll
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Menu.resources
 C:\Users\Home\Desktop\poker\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.GameForm.resources
+D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.GameForm.resources
+D:\pokerinwf\Draw-poker\obj\Debug\net8.0-windows\Draw_poker.Menu.resources

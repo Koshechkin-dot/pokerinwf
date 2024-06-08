@@ -23,6 +23,7 @@ namespace Draw_poker
         {
         }
         public GameBank GameBank;
+        public List<PlayerHolder> PlayerHolders { get; private set; }
         public int _bet;
         public int _start_cash;
         
@@ -35,20 +36,59 @@ namespace Draw_poker
             {
                 new PlayerHolder(new Player(startCash),
                 cc.labels.Where(t => t.Name == "PlayerCash").First(),
-                cc.labels.Where(t => t.Name == "PlayerBet").First()
+                cc.labels.Where(t => t.Name == "PlayerBet").First(),
+                cc.checkboxes.Where(t => t.Name == "PlayerCheckBox").First()
                 ),
                 new PlayerHolder(new Player(startCash),
                 cc.labels.Where(t => t.Name == "BotCash").First(),
-                cc.labels.Where(t => t.Name == "BotBet").First()
+                cc.labels.Where(t => t.Name == "BotBet").First(),
+                cc.checkboxes.Where(t => t.Name == "BotCheckBox").First()
                 )
             };
         }
 
         public async void Game(int startCash, ContainerClass cc)
         {
-            List<PlayerHolder> playerHolders = Initialize(startCash, cc);
-            Round round = new(GameBank, playerHolders, cc.buttons, cc.checkboxes);
-            // я хз что тут писать await round.Trade();
+            PlayerHolders = Initialize(startCash, cc);
+            foreach (PlayerHolder playerHolder in PlayerHolders)
+            {
+                playerHolder.UpdateLabel();
+            }
+            string resultOfGame = string.Empty;
+            while(true)
+            {
+                Round round = new(PlayerHolders, cc.buttons);
+                await round.Trade();
+                if (PlayerHolders[0].Player.Cards.Count == 0)
+                {
+                    PlayerHolders[1].Player.Bet = 0;
+                    PlayerHolders[1].Player.Cash += GameBank.Bank;
+                    PlayerHolders[1].UpdateLabel();
+                    GameBank.Bank = 0;
+                    GameBank.UpdateLabel();
+                    continue;
+                }
+                await round.Replacement();
+                await round.Showdown();
+                if (PlayerHolders.Where(player => player.Player.Cash == 0).Count() > 0)
+                {
+                    int index = PlayerHolders.IndexOf(
+                        PlayerHolders.Where(player => player.Player.Cash == 0)
+                        .First()
+                        );
+                    if(index == 0)
+                    {
+                        resultOfGame = "Вы проиграли\nПопробуете еще раз?";
+                    }
+                    else
+                    {
+                        resultOfGame = "Вы выиграли!\nХотите еще партию?";
+                    }
+                    break;
+                }
+            }
+            //надо сделать окно с результатом
+           
         }
     }
 }

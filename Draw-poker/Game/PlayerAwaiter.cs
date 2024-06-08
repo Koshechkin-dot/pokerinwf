@@ -3,15 +3,9 @@
     public class PlayerAwaiter
     {
         private List<Button> Buttons;
-        private List<CheckBox> CheckBoxes;
-        public PlayerAwaiter(List<Button> buttons, List<CheckBox> checkBoxes)
+        public PlayerAwaiter(List<Button> buttons)
         {
             Buttons = buttons;
-            CheckBoxes = checkBoxes;
-            foreach (Button button in Buttons)
-            {
-                button.Click += HandleClick;
-            }
         }
         private TaskCompletionSource<bool> ButtonClicked = new TaskCompletionSource<bool>();
         private void HandleClick(object sender, EventArgs eventArgs)
@@ -20,23 +14,43 @@
         }
         public async Task TradeTurnAwaiter()
         {
-            Buttons.Where(t => t.Name == $"FoldB").First().Enabled = true;
-            Buttons.Where(t => t.Name == $"CallB").First().Enabled = true;
-            Buttons.Where(t => t.Name == $"RaiseB").First().Enabled = true;
+            List<Button> buttons = new List<Button>()
+            {
+                Buttons.Where(t => t.Name == "FoldB").First(),
+                Buttons.Where(t => t.Name == "CallB").First(),
+                Buttons.Where(t => t.Name == "RaiseB").First()
+            };
+            SetupButtons(buttons, true);
             await ButtonClicked.Task;
-            Buttons.Where(t => t.Name == $"FoldB").First().Enabled = false;
-            Buttons.Where(t => t.Name == $"CallB").First().Enabled = false;
-            Buttons.Where(t => t.Name == $"RaiseB").First().Enabled = false;
+            SetupButtons(buttons, false);
             ButtonClicked = new TaskCompletionSource<bool>();
         }
         public async Task ReplacementTurnAwaiter()
         {
-            //типо выделенные карты чекбоксов удалить карты с ними
-            //имена и масти карт надо где то в update я хз где
-            Buttons.Where(t => t.Name == $"ReplaceB").First().Enabled = true;
+            List<Button> buttons = new List<Button>()
+            {
+                Buttons.Where(t => t.Name == $"ReplaceB").First()
+            };
+            SetupButtons(buttons, true);
             await ButtonClicked.Task;
-            Buttons.Where(t => t.Name == $"ReplaceB").First().Enabled = false;
+            SetupButtons(buttons, false);
             ButtonClicked = new TaskCompletionSource<bool>();
+        }
+        private void SetupButtons(List<Button> buttons, bool enable)
+        {
+            foreach (var button in buttons)
+            {
+                button.Enabled = enable;
+                if (enable)
+                {
+                    button.Click += HandleClick;
+                }
+                else
+                {
+                    button.Click -= HandleClick;
+                }
+            }
+
         }
     }
 }

@@ -10,11 +10,11 @@ namespace Draw_poker.Game
         public bool IsPlayerDealer { get; set; }
         private PlayerAwaiter awaiter;
         
-        public Round(GameBank gameBank, List<PlayerHolder> players, List<Button> buttons, List<CheckBox> checkBoxes)
+        public Round(List<PlayerHolder> players, List<Button> buttons)
         {
             Deck = new DeckOfCards();
-            awaiter = new PlayerAwaiter(buttons, checkBoxes);
-            GameBank = gameBank;
+            awaiter = new PlayerAwaiter(buttons);
+            GameBank = GameProcess.Instance.GameBank;
             Players = players;
             
             CardDeal();
@@ -37,17 +37,13 @@ namespace Draw_poker.Game
         }
         public async Task Replacement()
         {
-            if (IsPlayerDealer)
+            await awaiter.ReplacementTurnAwaiter();
+
+            var indexes = Players[0].CheckedListBox.CheckedIndices.Cast<int>().ToList();
+            foreach(var index in indexes)
             {
-                Players[1].Action(50);
-                await awaiter.ReplacementTurnAwaiter();
+                Players[0].ReplaceCard(Deck.GetCard(), index);
             }
-            else
-            {
-                await awaiter.ReplacementTurnAwaiter();
-                Players[1].Action(50);
-            }
-            return;
         }
         public async Task Showdown()
         {
@@ -70,11 +66,17 @@ namespace Draw_poker.Game
         }
         private void CardDeal()
         {
+            foreach (var player in Players)
+            {
+                player.ClearCards();
+            }
             for (int i = 0; i < 5; i++)
             {
                 foreach (PlayerHolder plr in Players)
                 {
-                    plr.AddCard(Deck.GetCard());
+                    Card card = Deck.GetCard();
+                    plr.AddCard(card);
+                    plr.CheckedListBox.Items.Add(card.Value.ToString() + "Of" + card.Suit.ToString());
                 }
             }
         }

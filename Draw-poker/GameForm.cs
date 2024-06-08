@@ -28,26 +28,23 @@ namespace Draw_poker
             containerClass = new ContainerClass(this);
             gameProcess = GameProcess.Instance;
 
-            gameProcess.Initialize(start_cash, containerClass);
+            gameProcess.Game(start_cash, containerClass);
         }
 
         private void FoldB_Click(object sender, EventArgs e)
         {
-            //gameProcess._players[gameProcess._plr_pos].Fold();
-            //gameProcess.UpdateLabels(containerClass);
+            gameProcess.PlayerHolders[0].Fold();
         }
 
         private void CallB_Click(object sender, EventArgs e)
         {
-            //gameProcess._players[gameProcess._plr_pos].Call(gameProcess._bet);
-            //gameProcess.UpdateLabels(containerClass);
+            gameProcess.PlayerHolders[0].Call(gameProcess._bet);
         }
 
         private void RaiseB_Click(object sender, EventArgs e)
         {
-            //Int32.TryParse(RaiseValue.Text, out int result);
-            //gameProcess._players[gameProcess._plr_pos].Raise(result);
-            //gameProcess.UpdateLabels(containerClass);
+            Int32.TryParse(RaiseValue.Text, out int result);
+            gameProcess.PlayerHolders[0].Raise(result);
         }
 
         private void GameForm_FormClosed(object sender, FormClosedEventArgs e)

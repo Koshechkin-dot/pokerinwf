@@ -1,66 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\",
+  "WorkspaceRootPath": "D:\\pokerinwf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|d:\\pokerinwf\\draw-poker\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\game\\playerawaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\playerawaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\game\\round.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\game\\round.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\round.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\game\\gamebank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\gamebank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\playerholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\playerholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\playerholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker.core\\game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\game\\playerawaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\playerawaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\containerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\containerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|d:\\pokerinwf\\draw-poker\\game\\gamebank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\gamebank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\game\\winnerrecognizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\game\\winnerrecognizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\game\\winnerrecognizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\gameform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|c:\\users\\home\\desktop\\poker\\pokerinwf\\draw-poker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|D:\\pokerinwf\\draw-poker\\containerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0613804-6BDF-4B78-A1A1-82968D75ECF9}|Draw-poker\\Draw-poker.csproj|solutionrelative:draw-poker\\containerclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|d:\\pokerinwf\\draw-poker.core\\cardslogic\\cardvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\cardslogic\\cardvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|D:\\pokerinwf\\draw-poker.core\\game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\game\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|d:\\pokerinwf\\draw-poker.core\\combinationlogic\\checkers\\pairchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\combinationlogic\\checkers\\pairchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|d:\\pokerinwf\\draw-poker.core\\combinationlogic\\checkers\\noncombinationchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\combinationlogic\\checkers\\noncombinationchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|d:\\pokerinwf\\draw-poker.core\\combinationlogic\\checkers\\icombinationchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A00B50A8-5BFB-4EC2-91B8-5FA635E7DDD4}|Draw-poker.Core\\Draw-poker.Core.csproj|solutionrelative:draw-poker.core\\combinationlogic\\checkers\\icombinationchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,121 +82,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerAwaiter.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Game\\PlayerAwaiter.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Game\\PlayerAwaiter.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Game\\PlayerAwaiter.cs",
+              "RelativeToolTip": "Draw-poker\\Game\\PlayerAwaiter.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T07:30:31.35Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameBank.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Game\\GameBank.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Game\\GameBank.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Game\\GameBank.cs",
+              "RelativeToolTip": "Draw-poker\\Game\\GameBank.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T16:07:15.361Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameProcess.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\GameProcess.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\GameProcess.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\GameProcess.cs",
+              "RelativeToolTip": "Draw-poker\\GameProcess.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAwDcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T05:54:17.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerAwaiter.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\PlayerAwaiter.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Game\\PlayerAwaiter.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\PlayerAwaiter.cs",
-              "RelativeToolTip": "Draw-poker\\Game\\PlayerAwaiter.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCIAAAA+AAAA",
+              "Title": "Round.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Game\\Round.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Game\\Round.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Game\\Round.cs",
+              "RelativeToolTip": "Draw-poker\\Game\\Round.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T07:30:31.35Z",
+              "WhenOpened": "2024-06-08T05:56:12.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WinnerRecognizer.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\WinnerRecognizer.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Game\\WinnerRecognizer.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\WinnerRecognizer.cs",
-              "RelativeToolTip": "Draw-poker\\Game\\WinnerRecognizer.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "PlayerHolder.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\PlayerHolder.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\PlayerHolder.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\PlayerHolder.cs",
+              "RelativeToolTip": "Draw-poker\\PlayerHolder.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwEMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T07:30:28.358Z",
+              "WhenOpened": "2024-06-08T06:00:15.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GameForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.Designer.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\GameForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.Designer.cs",
-              "RelativeToolTip": "Draw-poker\\GameForm.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAIwBYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T07:03:21.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Menu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.Designer.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Menu.Designer.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.Designer.cs",
-              "RelativeToolTip": "Draw-poker\\Menu.Designer.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAewCEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:38:47.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContainerClass.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\ContainerClass.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\ContainerClass.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\ContainerClass.cs",
-              "RelativeToolTip": "Draw-poker\\ContainerClass.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:37:25.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Program.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Program.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Program.cs",
-              "RelativeToolTip": "Draw-poker\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:12:39.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Menu.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.cs",
-              "RelativeToolTip": "Draw-poker\\Menu.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAIwBgAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:09:26.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Menu.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Draw-poker\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:03:06.569Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\GameForm.cs",
               "RelativeDocumentMoniker": "Draw-poker\\GameForm.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Draw-poker\\GameForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T05:54:19.103Z",
@@ -192,37 +168,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "WinnerRecognizer.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Game\\WinnerRecognizer.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Game\\WinnerRecognizer.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Game\\WinnerRecognizer.cs",
+              "RelativeToolTip": "Draw-poker\\Game\\WinnerRecognizer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T07:30:28.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameForm.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\GameForm.cs",
               "RelativeDocumentMoniker": "Draw-poker\\GameForm.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameForm.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\GameForm.cs",
               "RelativeToolTip": "Draw-poker\\GameForm.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA2wB4AAAA/AAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCgAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T05:55:08.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerHolder.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\PlayerHolder.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\PlayerHolder.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\PlayerHolder.cs",
-              "RelativeToolTip": "Draw-poker\\PlayerHolder.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAzwAcAAAAlAAAA",
+              "DocumentIndex": 8,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Menu.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Menu.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Menu.cs",
+              "RelativeToolTip": "Draw-poker\\Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwBwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T06:00:15.433Z",
+              "WhenOpened": "2024-06-08T06:09:26.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "Menu.Designer.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Menu.Designer.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Menu.Designer.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Menu.Designer.cs",
+              "RelativeToolTip": "Draw-poker\\Menu.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:38:47.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Menu.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Menu.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Draw-poker\\Menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:03:06.569Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\Program.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\Program.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\Program.cs",
+              "RelativeToolTip": "Draw-poker\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:12:39.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContainerClass.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker\\ContainerClass.cs",
+              "RelativeDocumentMoniker": "Draw-poker\\ContainerClass.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker\\ContainerClass.cs",
+              "RelativeToolTip": "Draw-poker\\ContainerClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:37:25.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CardValue.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker.Core\\CardsLogic\\CardValue.cs",
+              "RelativeDocumentMoniker": "Draw-poker.Core\\CardsLogic\\CardValue.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker.Core\\CardsLogic\\CardValue.cs",
+              "RelativeToolTip": "Draw-poker.Core\\CardsLogic\\CardValue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T15:30:37.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Game\\Player.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker.Core\\Game\\Player.cs",
               "RelativeDocumentMoniker": "Draw-poker.Core\\Game\\Player.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Game\\Player.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker.Core\\Game\\Player.cs",
               "RelativeToolTip": "Draw-poker.Core\\Game\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -231,41 +284,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Round.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\Round.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Game\\Round.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\Round.cs",
-              "RelativeToolTip": "Draw-poker\\Game\\Round.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAcwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T05:56:12.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameBank.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\GameBank.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\Game\\GameBank.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Game\\GameBank.cs",
-              "RelativeToolTip": "Draw-poker\\Game\\GameBank.cs",
+              "DocumentIndex": 15,
+              "Title": "PairChecker.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\PairChecker.cs",
+              "RelativeDocumentMoniker": "Draw-poker.Core\\CombinationLogic\\Checkers\\PairChecker.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\PairChecker.cs",
+              "RelativeToolTip": "Draw-poker.Core\\CombinationLogic\\Checkers\\PairChecker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T05:55:50.047Z",
+              "WhenOpened": "2024-06-08T15:16:53.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameProcess.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameProcess.cs",
-              "RelativeDocumentMoniker": "Draw-poker\\GameProcess.cs",
-              "ToolTip": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\GameProcess.cs",
-              "RelativeToolTip": "Draw-poker\\GameProcess.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowDIAAAAjAAAA",
+              "DocumentIndex": 16,
+              "Title": "NonCombinationChecker.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\NonCombinationChecker.cs",
+              "RelativeDocumentMoniker": "Draw-poker.Core\\CombinationLogic\\Checkers\\NonCombinationChecker.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\NonCombinationChecker.cs",
+              "RelativeToolTip": "Draw-poker.Core\\CombinationLogic\\Checkers\\NonCombinationChecker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T05:54:17.938Z",
+              "WhenOpened": "2024-06-08T15:16:52.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICombinationChecker.cs",
+              "DocumentMoniker": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\ICombinationChecker.cs",
+              "RelativeDocumentMoniker": "Draw-poker.Core\\CombinationLogic\\Checkers\\ICombinationChecker.cs",
+              "ToolTip": "D:\\pokerinwf\\Draw-poker.Core\\CombinationLogic\\Checkers\\ICombinationChecker.cs",
+              "RelativeToolTip": "Draw-poker.Core\\CombinationLogic\\Checkers\\ICombinationChecker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T15:16:50.477Z",
               "EditorCaption": ""
             }
           ]
