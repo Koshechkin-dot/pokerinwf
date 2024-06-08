@@ -170,6 +170,7 @@
             // 
             // ReplaceB
             // 
+            ReplaceB.Enabled = false;
             ReplaceB.Location = new Point(12, 262);
             ReplaceB.Name = "ReplaceB";
             ReplaceB.Size = new Size(75, 23);
@@ -190,6 +191,7 @@
             BotCheckBox.FormattingEnabled = true;
             BotCheckBox.Location = new Point(174, 162);
             BotCheckBox.Name = "BotCheckBox";
+            BotCheckBox.SelectionMode = SelectionMode.None;
             BotCheckBox.Size = new Size(120, 94);
             BotCheckBox.TabIndex = 35;
             // 

@@ -1,5 +1,6 @@
 ﻿using Draw_poker.Core.CardsLogic;
 using Draw_poker.Core.Game;
+using Draw_poker.Game;
 
 namespace Draw_poker
 {
@@ -25,12 +26,13 @@ namespace Draw_poker
         public bool Call(int _bet)
         {
             var gp = GameProcess.Instance;
-            if (_bet <= Player.Cash + Player.Bet && _bet > Player.Bet)
+            if (_bet <= Player.Cash + Player.Bet && _bet > Player.Bet && _bet == gp.GameBank.Bet)
             {
                 Player.Cash -= (_bet - Player.Bet);
                 Player.Bet = _bet;
                 gp.GameBank.Bank += _bet;
                 UpdateLabel();
+                gp.GameBank.UpdateLabel();
                 return true;
             }
             return false;
@@ -38,13 +40,14 @@ namespace Draw_poker
         public bool Raise(int _new_bet)
         {
             var gp = GameProcess.Instance;
-            if (_new_bet <= Player.Cash + Player.Bet && _new_bet > gp._bet)
+            if (_new_bet <= Player.Cash + Player.Bet && _new_bet > gp.GameBank.Bet)
             {
                 Player.Cash -= (_new_bet - Player.Bet);
-                gp._bet = _new_bet;
+                gp.GameBank.Bet = _new_bet;
                 gp.GameBank.Bank += _new_bet - Player.Bet;
                 Player.Bet = _new_bet;
                 UpdateLabel();
+                gp.GameBank.UpdateLabel();
                 return true;
             }
             return false;
@@ -61,7 +64,7 @@ namespace Draw_poker
         public void ReplaceCard(Card newCard, int index)
         {
             Player.Cards[index] = newCard;
-            CheckedListBox.Items[index] = newCard;
+            CheckedListBox.Items[index] = newCard.Value + "Of" + newCard.Suit;
         }
         public void ClearCards()
         {
@@ -78,7 +81,7 @@ namespace Draw_poker
             Random random = new Random();
             if (random.Next(0, 100) < 20)
             {
-                Raise(_new_bet + 10);
+                Raise(_new_bet + 15);
             }
             else
             {

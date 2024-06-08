@@ -8,6 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override StraightFlushCheckerResult? Check(Player player)
         {
+            if (player.Cards.Count == 0) { return null; }
             var hand = player.Cards;
             CardSuit suit = hand[0].Suit;
             if (hand.Count(cards => cards.Suit == suit) == 5)

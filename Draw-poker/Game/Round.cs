@@ -23,15 +23,28 @@ namespace Draw_poker.Game
 
         public async Task Trade()
         {
-            if(IsPlayerDealer)
+            if (IsPlayerDealer)
             {
-                Players[1].Action(50);
+                Players[1].Action(GameBank.Bet);
                 await awaiter.TradeTurnAwaiter();
             }
             else
             {
                 await awaiter.TradeTurnAwaiter();
-                Players[1].Action(50);
+                Players[1].Action(GameBank.Bet);
+            }
+            foreach (PlayerHolder player in Players)
+            {
+                player.UpdateLabel();
+            }
+            if (Players[0].Player.Cards.Count == 0)
+            {
+                GameBank.Bet = 25;
+                return;
+            }
+            if (Players[0].Player.Bet != Players[1].Player.Bet)
+            {
+                await Trade();
             }
             return;
         }
@@ -62,7 +75,14 @@ namespace Draw_poker.Game
             foreach (var player in result)
             {
                 player.Cash += cashForWinners;
-            }   
+                
+            }
+            foreach (var player in Players)
+            {
+                player.Player.Bet = 0;
+                player.UpdateLabel();
+            }
+            GameBank.UpdateLabel();
         }
         private void CardDeal()
         {

@@ -24,13 +24,11 @@ namespace Draw_poker
         }
         public GameBank GameBank;
         public List<PlayerHolder> PlayerHolders { get; private set; }
-        public int _bet;
         public int _start_cash;
         
         public List<PlayerHolder> Initialize(int startCash, ContainerClass cc)
         {
             GameBank = new(cc.labels.Where(label => label.Name == "Bank").First());
-            _bet = 25;
             _start_cash = startCash;
             return new List<PlayerHolder>()
             {
@@ -66,6 +64,7 @@ namespace Draw_poker
                     PlayerHolders[1].UpdateLabel();
                     GameBank.Bank = 0;
                     GameBank.UpdateLabel();
+                    PlayerHolders[0].UpdateLabel();
                     continue;
                 }
                 await round.Replacement();

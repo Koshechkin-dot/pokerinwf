@@ -38,7 +38,7 @@ namespace Draw_poker
 
         private void CallB_Click(object sender, EventArgs e)
         {
-            gameProcess.PlayerHolders[0].Call(gameProcess._bet);
+            gameProcess.PlayerHolders[0].Call(gameProcess.GameBank.Bet);
         }
 
         private void RaiseB_Click(object sender, EventArgs e)

@@ -8,6 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override ThreeOfAKindCheckerResult? Check(Player player)
         {
+            if (player.Cards.Count == 0) { return null; }
             var hand = player.Cards;
             int? triple = hand.GroupBy(card => card.Value)
                               .Where(group => group.Count() == 3)

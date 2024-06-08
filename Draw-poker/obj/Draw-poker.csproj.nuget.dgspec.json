@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pokerinwf\\Draw-poker\\Draw-poker.csproj": {}
+    "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj": {}
   },
   "projects": {
-    "D:\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj": {
+    "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj",
         "projectName": "Draw-poker.Core",
-        "projectPath": "D:\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj",
-        "packagesPath": "C:\\Users\\Alexandr Petrenko\\.nuget\\packages\\",
-        "outputPath": "D:\\pokerinwf\\Draw-poker.Core\\obj\\",
+        "projectPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj",
+        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexandr Petrenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\pokerinwf\\Draw-poker\\Draw-poker.csproj": {
+    "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
+        "projectUniqueName": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
         "projectName": "Draw-poker",
-        "projectPath": "D:\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
-        "packagesPath": "C:\\Users\\Alexandr Petrenko\\.nuget\\packages\\",
-        "outputPath": "D:\\pokerinwf\\Draw-poker\\obj\\",
+        "projectPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\Draw-poker.csproj",
+        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexandr Petrenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,8 +98,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj": {
-                "projectPath": "D:\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj"
+              "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj": {
+                "projectPath": "C:\\Users\\Home\\Desktop\\poker\\pokerinwf\\Draw-poker.Core\\Draw-poker.Core.csproj"
               }
             }
           }
@@ -137,7 +137,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

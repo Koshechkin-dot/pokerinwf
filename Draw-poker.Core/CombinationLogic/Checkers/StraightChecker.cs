@@ -8,6 +8,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override StraightCheckerResult? Check(Player player)
         {
+            if (player.Cards.Count == 0) { return null; }
             var values = ConvertToValues(player);
             int min = (int)values.Min();
             for (int i = min; i < min + 5; i++)

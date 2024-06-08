@@ -7,6 +7,7 @@ namespace Draw_poker.Core.CombinationLogic.Checkers
     {
         public override NonCombinationCheckerResult? Check(Player player)
         {
+            if (player.Cards.Count == 0) { return null; }
             var values = ConvertToValues(player);
             return new(values.Max());
         }
