@@ -87,7 +87,8 @@ namespace Draw_poker
                 }
             }
             //надо сделать окно с результатом
-           
+            MessageBox.Show(resultOfGame);
+            Game(startCash, cc);
         }
     }
 }

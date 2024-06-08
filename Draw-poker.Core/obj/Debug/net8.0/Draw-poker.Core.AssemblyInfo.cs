@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Draw-poker.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da20bdcceebf21377ad9961b9664b17866403338")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca05666c8b49b794d9de99946f67476c23c2367a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Draw-poker.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Draw-poker.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
