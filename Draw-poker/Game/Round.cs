@@ -10,10 +10,10 @@ namespace Draw_poker.Game
         public bool IsPlayerDealer { get; set; }
         private PlayerAwaiter awaiter;
         
-        public Round(GameBank gameBank, List<PlayerHolder> players, List<Button> buttons)
+        public Round(GameBank gameBank, List<PlayerHolder> players, List<Button> buttons, List<CheckBox> checkBoxes)
         {
             Deck = new DeckOfCards();
-            awaiter = new PlayerAwaiter(buttons);
+            awaiter = new PlayerAwaiter(buttons, checkBoxes);
             GameBank = gameBank;
             Players = players;
             

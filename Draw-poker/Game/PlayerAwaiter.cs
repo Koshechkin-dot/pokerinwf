@@ -3,9 +3,11 @@
     public class PlayerAwaiter
     {
         private List<Button> Buttons;
-        public PlayerAwaiter(List<Button> buttons)
+        private List<CheckBox> CheckBoxes;
+        public PlayerAwaiter(List<Button> buttons, List<CheckBox> checkBoxes)
         {
             Buttons = buttons;
+            CheckBoxes = checkBoxes;
             foreach (Button button in Buttons)
             {
                 button.Click += HandleClick;
@@ -27,10 +29,13 @@
             Buttons.Where(t => t.Name == $"RaiseB").First().Enabled = false;
             ButtonClicked = new TaskCompletionSource<bool>();
         }
-        //допиши логику для реплейсмента ну там нужные кнопочки подрубишь все дела
         public async Task ReplacementTurnAwaiter()
         {
+            //типо выделенные карты чекбоксов удалить карты с ними
+            //имена и масти карт надо где то в update я хз где
+            Buttons.Where(t => t.Name == $"ReplaceB").First().Enabled = true;
             await ButtonClicked.Task;
+            Buttons.Where(t => t.Name == $"ReplaceB").First().Enabled = false;
             ButtonClicked = new TaskCompletionSource<bool>();
         }
     }

@@ -12,6 +12,7 @@ namespace Draw_poker
         Form menu;
         int num_of_players;
         private GameProcess gameProcess;
+        private Round round;
         private ContainerClass containerClass;
 
         public GameForm(Form Menu, string plrName)
@@ -28,10 +29,6 @@ namespace Draw_poker
             gameProcess = GameProcess.Instance;
 
             gameProcess.Initialize(start_cash, containerClass);
-
-            //gameProcess.Start(num_of_players, start_cash, containerClass);
-            //gameProcess.GameIter(containerClass);
-            //gameProcess.UpdateLabels(containerClass);
         }
 
         private void FoldB_Click(object sender, EventArgs e)

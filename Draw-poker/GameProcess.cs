@@ -29,6 +29,8 @@ namespace Draw_poker
         public List<PlayerHolder> Initialize(int startCash, ContainerClass cc)
         {
             GameBank = new(cc.labels.Where(label => label.Name == "Bank").First());
+            _bet = 25;
+            _start_cash = startCash;
             return new List<PlayerHolder>()
             {
                 new PlayerHolder(new Player(startCash),
@@ -42,16 +44,11 @@ namespace Draw_poker
             };
         }
 
-        public void Start(int start_cash)
+        public async void Game(int startCash, ContainerClass cc)
         {
-            _bet = 25; //ante
-            _start_cash = start_cash;
-            
-        }
-
-        public void AllGame(ContainerClass cc)
-        {
-            
+            List<PlayerHolder> playerHolders = Initialize(startCash, cc);
+            Round round = new(GameBank, playerHolders, cc.buttons, cc.checkboxes);
+            // я хз что тут писать await round.Trade();
         }
     }
 }

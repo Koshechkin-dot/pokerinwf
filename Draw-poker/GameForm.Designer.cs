@@ -43,6 +43,12 @@
             PlayerCash = new Label();
             PlayerName = new Label();
             BotCash = new Label();
+            Card0 = new CheckBox();
+            Card1 = new CheckBox();
+            Card2 = new CheckBox();
+            Card3 = new CheckBox();
+            Card4 = new CheckBox();
+            ReplaceB = new Button();
             SuspendLayout();
             // 
             // FoldB
@@ -165,6 +171,65 @@
             BotCash.TabIndex = 27;
             BotCash.Text = "label9";
             // 
+            // Card0
+            // 
+            Card0.AutoSize = true;
+            Card0.Location = new Point(12, 137);
+            Card0.Name = "Card0";
+            Card0.Size = new Size(83, 19);
+            Card0.TabIndex = 28;
+            Card0.Text = "checkBox1";
+            Card0.UseVisualStyleBackColor = true;
+            // 
+            // Card1
+            // 
+            Card1.AutoSize = true;
+            Card1.Location = new Point(12, 162);
+            Card1.Name = "Card1";
+            Card1.Size = new Size(83, 19);
+            Card1.TabIndex = 29;
+            Card1.Text = "checkBox2";
+            Card1.UseVisualStyleBackColor = true;
+            // 
+            // Card2
+            // 
+            Card2.AutoSize = true;
+            Card2.Location = new Point(12, 187);
+            Card2.Name = "Card2";
+            Card2.Size = new Size(83, 19);
+            Card2.TabIndex = 30;
+            Card2.Text = "checkBox3";
+            Card2.UseVisualStyleBackColor = true;
+            // 
+            // Card3
+            // 
+            Card3.AutoSize = true;
+            Card3.Location = new Point(12, 212);
+            Card3.Name = "Card3";
+            Card3.Size = new Size(83, 19);
+            Card3.TabIndex = 31;
+            Card3.Text = "checkBox4";
+            Card3.UseVisualStyleBackColor = true;
+            // 
+            // Card4
+            // 
+            Card4.AutoSize = true;
+            Card4.Location = new Point(12, 237);
+            Card4.Name = "Card4";
+            Card4.Size = new Size(83, 19);
+            Card4.TabIndex = 32;
+            Card4.Text = "checkBox5";
+            Card4.UseVisualStyleBackColor = true;
+            // 
+            // ReplaceB
+            // 
+            ReplaceB.Location = new Point(12, 262);
+            ReplaceB.Name = "ReplaceB";
+            ReplaceB.Size = new Size(75, 23);
+            ReplaceB.TabIndex = 33;
+            ReplaceB.Text = "Replace";
+            ReplaceB.UseVisualStyleBackColor = true;
+            // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -172,6 +237,12 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(784, 561);
+            Controls.Add(ReplaceB);
+            Controls.Add(Card4);
+            Controls.Add(Card3);
+            Controls.Add(Card2);
+            Controls.Add(Card1);
+            Controls.Add(Card0);
             Controls.Add(BotCash);
             Controls.Add(RaiseValue);
             Controls.Add(Bank);
@@ -217,5 +288,11 @@
         private Label PlayerCash;
         private Label PlayerName;
         private Label BotCash;
+        private CheckBox Card0;
+        private CheckBox Card1;
+        private CheckBox Card2;
+        private CheckBox Card3;
+        private CheckBox Card4;
+        private Button ReplaceB;
     }
 }
