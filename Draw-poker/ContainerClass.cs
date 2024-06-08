@@ -4,7 +4,7 @@
     {
         public List<Label> labels;
         public List<Button> buttons;
-        public ContainerClass(Form form)
+        public ContainerClass(GameForm form)
         {
             labels = form.Controls.OfType<Label>().ToList();
             buttons = form.Controls.OfType<Button>().ToList();

@@ -49,28 +49,9 @@ namespace Draw_poker
             
         }
 
-        //public void GameIter(ContainerClass cc)
-        //{
-        //    cc.buttons.Where(t => t.Name == $"FoldB").First().Enabled = false;
-        //    cc.buttons.Where(t => t.Name == $"CallB").First().Enabled = false;
-        //    cc.buttons.Where(t => t.Name == $"RaiseB").First().Enabled = false;
-        //    for (int i = 0; i < _players.Length; ++i)
-        //    {
-        //        if (_players[i].Player.GetCards != null)
-        //        {
-        //            if (i != _plr_pos)
-        //            {
-        //                _players[i].Action(_bet);
-        //                UpdateLabels(cc);
-        //            }
-        //            else
-        //            {
-        //                cc.buttons.Where(t => t.Name == $"FoldB").First().Enabled = true;
-        //                cc.buttons.Where(t => t.Name == $"CallB").First().Enabled = true;
-        //                cc.buttons.Where(t => t.Name == $"RaiseB").First().Enabled = true;
-        //            }
-        //        }
-        //    }
-        //}
+        public void AllGame(ContainerClass cc)
+        {
+            
+        }
     }
 }

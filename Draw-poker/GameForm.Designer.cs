@@ -1,6 +1,6 @@
 ﻿namespace Draw_poker
 {
-    partial class Form
+    partial class GameForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,24 +29,19 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             FoldB = new Button();
             CallB = new Button();
             RaiseB = new Button();
-            Player0 = new Label();
+            BotName = new Label();
             BotBet = new Label();
             PlayerBet = new Label();
             label13 = new Label();
             Bank = new Label();
             RaiseValue = new TextBox();
             playerHand = new ImageList(components);
-            Card0 = new CheckBox();
-            Card1 = new CheckBox();
-            Card2 = new CheckBox();
-            Card3 = new CheckBox();
-            Card4 = new CheckBox();
             PlayerCash = new Label();
-            Player3 = new Label();
+            PlayerName = new Label();
             BotCash = new Label();
             SuspendLayout();
             // 
@@ -80,14 +75,14 @@
             RaiseB.UseVisualStyleBackColor = true;
             RaiseB.Click += RaiseB_Click;
             // 
-            // Player0
+            // BotName
             // 
-            Player0.AutoSize = true;
-            Player0.Location = new Point(12, 9);
-            Player0.Name = "Player0";
-            Player0.Size = new Size(39, 15);
-            Player0.TabIndex = 3;
-            Player0.Text = "Player";
+            BotName.AutoSize = true;
+            BotName.Location = new Point(12, 9);
+            BotName.Name = "BotName";
+            BotName.Size = new Size(25, 15);
+            BotName.TabIndex = 3;
+            BotName.Text = "Bot";
             // 
             // BotBet
             // 
@@ -143,66 +138,6 @@
             playerHand.Images.SetKeyName(3, "ace_of_spades.png");
             playerHand.Images.SetKeyName(4, "10_of_spades.png");
             // 
-            // Card0
-            // 
-            Card0.AutoSize = true;
-            Card0.Enabled = false;
-            Card0.ImageIndex = 0;
-            Card0.ImageList = playerHand;
-            Card0.Location = new Point(692, 12);
-            Card0.Name = "Card0";
-            Card0.Size = new Size(80, 94);
-            Card0.TabIndex = 22;
-            Card0.UseVisualStyleBackColor = true;
-            // 
-            // Card1
-            // 
-            Card1.AutoSize = true;
-            Card1.Enabled = false;
-            Card1.ImageIndex = 2;
-            Card1.ImageList = playerHand;
-            Card1.Location = new Point(692, 118);
-            Card1.Name = "Card1";
-            Card1.Size = new Size(80, 94);
-            Card1.TabIndex = 23;
-            Card1.UseVisualStyleBackColor = true;
-            // 
-            // Card2
-            // 
-            Card2.AutoSize = true;
-            Card2.Enabled = false;
-            Card2.ImageIndex = 4;
-            Card2.ImageList = playerHand;
-            Card2.Location = new Point(692, 318);
-            Card2.Name = "Card2";
-            Card2.Size = new Size(80, 94);
-            Card2.TabIndex = 24;
-            Card2.UseVisualStyleBackColor = true;
-            // 
-            // Card3
-            // 
-            Card3.AutoSize = true;
-            Card3.Enabled = false;
-            Card3.ImageIndex = 1;
-            Card3.ImageList = playerHand;
-            Card3.Location = new Point(692, 218);
-            Card3.Name = "Card3";
-            Card3.Size = new Size(80, 94);
-            Card3.TabIndex = 25;
-            Card3.UseVisualStyleBackColor = true;
-            // 
-            // Card4
-            // 
-            Card4.AutoSize = true;
-            Card4.Enabled = false;
-            Card4.ImageIndex = 3;
-            Card4.ImageList = playerHand;
-            Card4.Location = new Point(692, 418);
-            Card4.Name = "Card4";
-            Card4.Size = new Size(80, 94);
-            Card4.TabIndex = 26;
-            Card4.UseVisualStyleBackColor = true;
-            // 
             // PlayerCash
             // 
             PlayerCash.AutoSize = true;
@@ -212,14 +147,14 @@
             PlayerCash.TabIndex = 14;
             PlayerCash.Text = "label8";
             // 
-            // Player3
+            // PlayerName
             // 
-            Player3.AutoSize = true;
-            Player3.Location = new Point(12, 54);
-            Player3.Name = "Player3";
-            Player3.Size = new Size(39, 15);
-            Player3.TabIndex = 9;
-            Player3.Text = "Player";
+            PlayerName.AutoSize = true;
+            PlayerName.Location = new Point(12, 54);
+            PlayerName.Name = "PlayerName";
+            PlayerName.Size = new Size(39, 15);
+            PlayerName.TabIndex = 9;
+            PlayerName.Text = "Player";
             // 
             // BotCash
             // 
@@ -230,7 +165,7 @@
             BotCash.TabIndex = 27;
             BotCash.Text = "label9";
             // 
-            // Form
+            // GameForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -238,26 +173,22 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(784, 561);
             Controls.Add(BotCash);
-            Controls.Add(Card4);
-            Controls.Add(Card3);
-            Controls.Add(Card2);
-            Controls.Add(Card1);
-            Controls.Add(Card0);
             Controls.Add(RaiseValue);
             Controls.Add(Bank);
             Controls.Add(label13);
             Controls.Add(PlayerBet);
             Controls.Add(BotBet);
             Controls.Add(PlayerCash);
-            Controls.Add(Player3);
-            Controls.Add(Player0);
+            Controls.Add(PlayerName);
+            Controls.Add(BotName);
             Controls.Add(RaiseB);
             Controls.Add(CallB);
             Controls.Add(FoldB);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(640, 480);
-            Name = "Form";
+            Name = "GameForm";
             Text = "Draw Poker";
+            FormClosed += GameForm_FormClosed;
             Load += Form_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -268,7 +199,7 @@
         private Button FoldB;
         private Button CallB;
         private Button RaiseB;
-        private Label Player0;
+        private Label BotName;
         private Label Player1;
         private Label Player2;
         private Label Cash0;
@@ -283,13 +214,8 @@
         private Label Bank;
         private TextBox RaiseValue;
         public ImageList playerHand;
-        private CheckBox Card0;
-        private CheckBox Card1;
-        private CheckBox Card2;
-        private CheckBox Card3;
-        private CheckBox Card4;
         private Label PlayerCash;
-        private Label Player3;
+        private Label PlayerName;
         private Label BotCash;
     }
 }
