@@ -7,6 +7,25 @@ namespace Draw_poker
 {
     public class GameProcess
     {
+        private TaskCompletionSource<bool> ButtonClicked = new TaskCompletionSource<bool>();
+        private void HandleClick(object sender, EventArgs eventArgs)
+        {
+            ButtonClicked.TrySetResult(true);
+        }
+        private void SetupButton(Button button, bool enable)
+        {
+            button.Visible = enable;
+            button.Enabled = enable;
+            if (enable)
+            {
+                button.Click += HandleClick;
+            }
+            else
+            {
+                button.Click -= HandleClick;
+            }
+        }
+
         public static GameProcess Instance
         {
             get
@@ -52,6 +71,7 @@ namespace Draw_poker
 
         public async void Game(int startCash, ContainerClass cc)
         {
+            Button nextRound = cc.Buttons.Where(button => button.Name == "NextRound").First();
             PlayerHolders = Initialize(startCash, cc);
             foreach (PlayerHolder playerHolder in PlayerHolders)
             {
@@ -74,6 +94,9 @@ namespace Draw_poker
                 }
                 await round.Replacement();
                 await round.Showdown();
+                SetupButton(nextRound, true);
+                await ButtonClicked.Task;
+                SetupButton(nextRound, false);
                 if (PlayerHolders.Where(player => player.Player.Cash == 0).Count() > 0)
                 {
                     int index = PlayerHolders.IndexOf(

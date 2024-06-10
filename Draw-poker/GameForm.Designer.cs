@@ -57,6 +57,7 @@
             BotCard3 = new PictureBox();
             BotCard2 = new PictureBox();
             BotCard1 = new PictureBox();
+            NextRound = new Button();
             ((System.ComponentModel.ISupportInitialize)PlayerCard1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PlayerCard2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PlayerCard3).BeginInit();
@@ -318,6 +319,17 @@
             BotCard1.TabIndex = 46;
             BotCard1.TabStop = false;
             // 
+            // NextRound
+            // 
+            NextRound.Enabled = false;
+            NextRound.Location = new Point(11, 209);
+            NextRound.Name = "NextRound";
+            NextRound.Size = new Size(75, 23);
+            NextRound.TabIndex = 51;
+            NextRound.Text = "NextRound";
+            NextRound.UseVisualStyleBackColor = true;
+            NextRound.Visible = false;
+            // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -325,6 +337,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(858, 441);
+            Controls.Add(NextRound);
             Controls.Add(checkBox5);
             Controls.Add(checkBox4);
             Controls.Add(checkBox3);
@@ -411,5 +424,6 @@
         private PictureBox BotCard3;
         private PictureBox BotCard2;
         private PictureBox BotCard1;
+        private Button NextRound;
     }
 }

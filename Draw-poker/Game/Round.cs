@@ -66,7 +66,6 @@ namespace Draw_poker.Game
         public async Task Showdown()
         {
             Players[1].ShowCards();
-            await Task.Delay(5000);
             WinnerRecognizer recognizer = new WinnerRecognizer();
             var result = recognizer.Recognize(Players.Select(x => x.Player).ToList());
             int cashForWinners;

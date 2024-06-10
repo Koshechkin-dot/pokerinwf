@@ -42,5 +42,10 @@ namespace Draw_poker
         {
             menu.Close();
         }
+
+        private async Task NextRound_Click(object sender, EventArgs e)
+        {
+            await Task.Delay(1);
+        }
     }
 }
