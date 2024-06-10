@@ -97,6 +97,7 @@ namespace Draw_poker
                 SetupButton(nextRound, true);
                 await ButtonClicked.Task;
                 SetupButton(nextRound, false);
+                ButtonClicked = new TaskCompletionSource<bool>();
                 if (PlayerHolders.Where(player => player.Player.Cash == 0).Count() > 0)
                 {
                     int index = PlayerHolders.IndexOf(
