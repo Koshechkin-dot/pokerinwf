@@ -28,7 +28,7 @@ namespace Draw_poker
         public bool CanCall(int _bet)
         {
             var gp = GameProcess.Instance;
-            if (_bet <= Player.Cash + Player.Bet && _bet > Player.Bet && _bet == gp.GameBank.Bet)
+            if (_bet <= Player.Cash + Player.Bet && _bet >= Player.Bet && _bet == gp.GameBank.Bet)
             {
                 return true;
             }
@@ -37,9 +37,10 @@ namespace Draw_poker
         public void Call(int _bet)
         {
             var gp = GameProcess.Instance;
+            if (Player.Bet == gp.GameBank.Bet) return;
             Player.Cash -= _bet - Player.Bet;
+            gp.GameBank.Bank += _bet - Player.Bet;
             Player.Bet = _bet;
-            gp.GameBank.Bank += _bet;
             UpdateLabel();
             gp.GameBank.UpdateLabel();
         }

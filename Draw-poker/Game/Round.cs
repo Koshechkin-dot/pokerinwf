@@ -47,6 +47,7 @@ namespace Draw_poker.Game
             {
                 await Trade();
             }
+            return;
         }
         public async Task Replacement()
         {
