@@ -1,34 +1,25 @@
-using Draw_poker.Core.CardsLogic;
-using Draw_poker.Core.CombinationLogic.CheckerResults;
-using Draw_poker.Core.CombinationLogic.Checkers;
-using Draw_poker.Core.Game;
-using Draw_poker.Game;
-using System.Runtime.CompilerServices;
-
 namespace Draw_poker
 {
-    public partial class GameForm : System.Windows.Forms.Form
+    public partial class GameForm : Form
     {
         Form menu;
-        int num_of_players;
+        private int startCash;
         private GameProcess gameProcess;
-        private Round round;
         private ContainerClass containerClass;
 
-        public GameForm(Form Menu, string plrName)
+        public GameForm(Form Menu, string plrName, int startCash)
         {
             InitializeComponent();
             PlayerName.Text = plrName;
             menu = Menu;
+            this.startCash = startCash;
+            containerClass = new ContainerClass(this);
+            gameProcess = GameProcess.Instance;
         }
 
         private void Form_Load(object sender, EventArgs e)
         {
-            int start_cash = 1000;
-            containerClass = new ContainerClass(this);
-            gameProcess = GameProcess.Instance;
-
-            gameProcess.Game(start_cash, containerClass);
+            gameProcess.Game(startCash, containerClass);
         }
 
         private void FoldB_Click(object sender, EventArgs e)

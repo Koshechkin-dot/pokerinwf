@@ -22,8 +22,9 @@ namespace Draw_poker
         {
             if (NameBox.Text != string.Empty && NameBox.Text.Length < 8)
             {
+                int.TryParse(CashBox.Text, out int result);
                 this.Hide();
-                GameForm form = new GameForm(this, NameBox.Text);
+                GameForm form = new GameForm(this, NameBox.Text, result);
                 form.Show();
             }
         }

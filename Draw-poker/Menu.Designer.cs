@@ -32,19 +32,21 @@
             NameBox = new TextBox();
             Label = new Label();
             StartB = new Button();
+            label1 = new Label();
+            CashBox = new TextBox();
             SuspendLayout();
             // 
             // NameBox
             // 
-            NameBox.Location = new Point(320, 190);
+            NameBox.Location = new Point(313, 190);
             NameBox.Name = "NameBox";
-            NameBox.Size = new Size(150, 23);
+            NameBox.Size = new Size(157, 23);
             NameBox.TabIndex = 28;
             // 
             // Label
             // 
             Label.AutoSize = true;
-            Label.Location = new Point(357, 172);
+            Label.Location = new Point(351, 172);
             Label.Name = "Label";
             Label.Size = new Size(78, 15);
             Label.TabIndex = 29;
@@ -52,19 +54,37 @@
             // 
             // StartB
             // 
-            StartB.Location = new Point(320, 219);
+            StartB.Location = new Point(313, 279);
             StartB.Name = "StartB";
-            StartB.Size = new Size(150, 23);
+            StartB.Size = new Size(157, 23);
             StartB.TabIndex = 30;
             StartB.Text = "Начать игру";
             StartB.UseVisualStyleBackColor = true;
             StartB.Click += StartB_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(313, 216);
+            label1.Name = "label1";
+            label1.Size = new Size(157, 15);
+            label1.TabIndex = 32;
+            label1.Text = "Введите начальную сумму:";
+            // 
+            // CashBox
+            // 
+            CashBox.Location = new Point(313, 234);
+            CashBox.Name = "CashBox";
+            CashBox.Size = new Size(157, 23);
+            CashBox.TabIndex = 31;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(775, 553);
+            Controls.Add(label1);
+            Controls.Add(CashBox);
             Controls.Add(StartB);
             Controls.Add(Label);
             Controls.Add(NameBox);
@@ -80,5 +100,7 @@
         private TextBox NameBox;
         private Label Label;
         private Button StartB;
+        private Label label1;
+        private TextBox CashBox;
     }
 }

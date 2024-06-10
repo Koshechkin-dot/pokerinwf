@@ -1,6 +1,7 @@
 ﻿using Draw_poker.Core.CardsLogic;
 using Draw_poker.Core.Game;
 using Draw_poker.Game;
+using System.Windows.Forms;
 
 namespace Draw_poker
 {
@@ -24,23 +25,27 @@ namespace Draw_poker
         }
         public GameBank GameBank;
         public List<PlayerHolder> PlayerHolders { get; private set; }
+        public ContainerClass ContainerClass { get; private set; }
         public int _start_cash;
         
         public List<PlayerHolder> Initialize(int startCash, ContainerClass cc)
         {
-            GameBank = new(cc.labels.Where(label => label.Name == "Bank").First());
+            ContainerClass = cc;
             _start_cash = startCash;
+            GameBank = new(cc.Labels.Where(label => label.Name == "Bank").First());
             return new List<PlayerHolder>()
             {
                 new PlayerHolder(new Player(startCash),
-                cc.labels.Where(t => t.Name == "PlayerCash").First(),
-                cc.labels.Where(t => t.Name == "PlayerBet").First(),
-                cc.checkboxes.Where(t => t.Name == "PlayerCheckBox").First()
+                cc.Labels.Where(t => t.Name == "PlayerCash").First(),
+                cc.Labels.Where(t => t.Name == "PlayerBet").First(),
+                cc.PlayerCards,
+                false
                 ),
                 new PlayerHolder(new Player(startCash),
-                cc.labels.Where(t => t.Name == "BotCash").First(),
-                cc.labels.Where(t => t.Name == "BotBet").First(),
-                cc.checkboxes.Where(t => t.Name == "BotCheckBox").First()
+                cc.Labels.Where(t => t.Name == "BotCash").First(),
+                cc.Labels.Where(t => t.Name == "BotBet").First(),
+                cc.BotCards,
+                true
                 )
             };
         }
@@ -55,7 +60,7 @@ namespace Draw_poker
             string resultOfGame = string.Empty;
             while(true)
             {
-                Round round = new(PlayerHolders, cc.buttons);
+                Round round = new(PlayerHolders, cc.Buttons);
                 await round.Trade();
                 if (PlayerHolders[0].Player.Cards.Count == 0)
                 {

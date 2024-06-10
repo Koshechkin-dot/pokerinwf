@@ -9,13 +9,15 @@ namespace Draw_poker
         public Player Player { get; }
         public Label CashLabel { get; }
         public Label BetLabel { get; }
-        public CheckedListBox CheckedListBox { get; }
-        public PlayerHolder(Player player, Label cash, Label bet, CheckedListBox checkedListBox)
+        public List<PictureBox> PictureBoxes { get; }
+        public bool IsBot { get; }
+        public PlayerHolder(Player player, Label cash, Label bet, List<PictureBox> checkedListBox, bool isBot)
         {
             Player = player;
             CashLabel = cash;
             BetLabel = bet;
-            CheckedListBox = checkedListBox;
+            PictureBoxes = checkedListBox;
+            IsBot = isBot;
         }
         public void Fold()
         {
@@ -23,19 +25,23 @@ namespace Draw_poker
             Player.Bet = 0;
             UpdateLabel();
         }
-        public bool Call(int _bet)
+        public bool CanCall(int _bet)
         {
             var gp = GameProcess.Instance;
             if (_bet <= Player.Cash + Player.Bet && _bet > Player.Bet && _bet == gp.GameBank.Bet)
             {
-                Player.Cash -= (_bet - Player.Bet);
-                Player.Bet = _bet;
-                gp.GameBank.Bank += _bet;
-                UpdateLabel();
-                gp.GameBank.UpdateLabel();
                 return true;
             }
             return false;
+        }
+        public void Call(int _bet)
+        {
+            var gp = GameProcess.Instance;
+            Player.Cash -= _bet - Player.Bet;
+            Player.Bet = _bet;
+            gp.GameBank.Bank += _bet;
+            UpdateLabel();
+            gp.GameBank.UpdateLabel();
         }
         public bool Raise(int _new_bet)
         {
@@ -64,22 +70,28 @@ namespace Draw_poker
         public void ReplaceCard(Card newCard, int index)
         {
             Player.Cards[index] = newCard;
-            CheckedListBox.Items[index] = newCard.Value + "Of" + newCard.Suit;
+            if(!IsBot)
+            {
+                PictureBoxes[index].Image = ImageRepository.GetCardImage(newCard);
+            }
         }
         public void ClearCards()
         {
-            CheckedListBox.Items.Clear();
+            foreach(var box in PictureBoxes)
+            {
+                box.Image = null;
+            }
             Player.Cards.Clear();
         }
         // Для Ботов
         public void Action(int _new_bet)
         {
-            if (!Call(_new_bet))
+            if (!CanCall(_new_bet))
             {
                 Fold();
             }
             Random random = new Random();
-            if (random.Next(0, 100) < 20)
+            if (random.Next(0, 100) < 40)
             {
                 Raise(_new_bet + 15);
             }
@@ -88,6 +100,17 @@ namespace Draw_poker
                 Call(_new_bet);
             }
             UpdateLabel();
+        }
+        public void ShowCards()
+        {
+            if(Player.Cards.Count == 0)
+            {
+                return;
+            }
+            for(int i = 0; i < Player.Cards.Count; i++)
+            {
+                PictureBoxes[i].Image = ImageRepository.GetCardImage(Player.Cards[i]);
+            }
         }
         public void UpdateLabel()
         {

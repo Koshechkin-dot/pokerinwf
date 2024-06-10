@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             FoldB = new Button();
             CallB = new Button();
@@ -39,18 +38,40 @@
             label13 = new Label();
             Bank = new Label();
             RaiseValue = new TextBox();
-            playerHand = new ImageList(components);
             PlayerCash = new Label();
             PlayerName = new Label();
             BotCash = new Label();
             ReplaceB = new Button();
-            PlayerCheckBox = new CheckedListBox();
-            BotCheckBox = new CheckedListBox();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox5 = new CheckBox();
+            PlayerCard1 = new PictureBox();
+            PlayerCard2 = new PictureBox();
+            PlayerCard3 = new PictureBox();
+            PlayerCard4 = new PictureBox();
+            PlayerCard5 = new PictureBox();
+            BotCard5 = new PictureBox();
+            BotCard4 = new PictureBox();
+            BotCard3 = new PictureBox();
+            BotCard2 = new PictureBox();
+            BotCard1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard1).BeginInit();
             SuspendLayout();
             // 
             // FoldB
             // 
-            FoldB.Location = new Point(12, 526);
+            FoldB.Location = new Point(11, 69);
             FoldB.Name = "FoldB";
             FoldB.Size = new Size(75, 23);
             FoldB.TabIndex = 0;
@@ -60,7 +81,7 @@
             // 
             // CallB
             // 
-            CallB.Location = new Point(93, 526);
+            CallB.Location = new Point(11, 40);
             CallB.Name = "CallB";
             CallB.Size = new Size(75, 23);
             CallB.TabIndex = 1;
@@ -70,7 +91,7 @@
             // 
             // RaiseB
             // 
-            RaiseB.Location = new Point(174, 526);
+            RaiseB.Location = new Point(11, 11);
             RaiseB.Name = "RaiseB";
             RaiseB.Size = new Size(75, 23);
             RaiseB.TabIndex = 2;
@@ -81,7 +102,7 @@
             // BotName
             // 
             BotName.AutoSize = true;
-            BotName.Location = new Point(12, 9);
+            BotName.Location = new Point(172, 301);
             BotName.Name = "BotName";
             BotName.Size = new Size(25, 15);
             BotName.TabIndex = 3;
@@ -90,7 +111,7 @@
             // BotBet
             // 
             BotBet.AutoSize = true;
-            BotBet.Location = new Point(101, 9);
+            BotBet.Location = new Point(261, 301);
             BotBet.Name = "BotBet";
             BotBet.Size = new Size(38, 15);
             BotBet.TabIndex = 15;
@@ -99,7 +120,7 @@
             // PlayerBet
             // 
             PlayerBet.AutoSize = true;
-            PlayerBet.Location = new Point(101, 54);
+            PlayerBet.Location = new Point(261, 12);
             PlayerBet.Name = "PlayerBet";
             PlayerBet.Size = new Size(44, 15);
             PlayerBet.TabIndex = 18;
@@ -108,7 +129,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(12, 508);
+            label13.Location = new Point(532, 217);
             label13.Name = "label13";
             label13.Size = new Size(33, 15);
             label13.TabIndex = 19;
@@ -117,34 +138,23 @@
             // Bank
             // 
             Bank.AutoSize = true;
-            Bank.Location = new Point(51, 508);
+            Bank.Location = new Point(571, 217);
             Bank.Name = "Bank";
-            Bank.Size = new Size(44, 15);
+            Bank.Size = new Size(13, 15);
             Bank.TabIndex = 20;
-            Bank.Text = "label14";
+            Bank.Text = "0";
             // 
             // RaiseValue
             // 
-            RaiseValue.Location = new Point(255, 527);
+            RaiseValue.Location = new Point(92, 12);
             RaiseValue.Name = "RaiseValue";
             RaiseValue.Size = new Size(74, 23);
             RaiseValue.TabIndex = 21;
             // 
-            // playerHand
-            // 
-            playerHand.ColorDepth = ColorDepth.Depth32Bit;
-            playerHand.ImageStream = (ImageListStreamer)resources.GetObject("playerHand.ImageStream");
-            playerHand.TransparentColor = Color.Transparent;
-            playerHand.Images.SetKeyName(0, "2_of_clubs.png");
-            playerHand.Images.SetKeyName(1, "4_of_diamonds.png");
-            playerHand.Images.SetKeyName(2, "king_of_clubs2.png");
-            playerHand.Images.SetKeyName(3, "ace_of_spades.png");
-            playerHand.Images.SetKeyName(4, "10_of_spades.png");
-            // 
             // PlayerCash
             // 
             PlayerCash.AutoSize = true;
-            PlayerCash.Location = new Point(57, 54);
+            PlayerCash.Location = new Point(217, 12);
             PlayerCash.Name = "PlayerCash";
             PlayerCash.Size = new Size(38, 15);
             PlayerCash.TabIndex = 14;
@@ -153,7 +163,7 @@
             // PlayerName
             // 
             PlayerName.AutoSize = true;
-            PlayerName.Location = new Point(12, 54);
+            PlayerName.Location = new Point(172, 12);
             PlayerName.Name = "PlayerName";
             PlayerName.Size = new Size(39, 15);
             PlayerName.TabIndex = 9;
@@ -162,7 +172,7 @@
             // BotCash
             // 
             BotCash.AutoSize = true;
-            BotCash.Location = new Point(57, 9);
+            BotCash.Location = new Point(217, 301);
             BotCash.Name = "BotCash";
             BotCash.Size = new Size(38, 15);
             BotCash.TabIndex = 27;
@@ -171,29 +181,142 @@
             // ReplaceB
             // 
             ReplaceB.Enabled = false;
-            ReplaceB.Location = new Point(12, 262);
+            ReplaceB.Location = new Point(234, 142);
             ReplaceB.Name = "ReplaceB";
             ReplaceB.Size = new Size(75, 23);
             ReplaceB.TabIndex = 33;
             ReplaceB.Text = "Replace";
             ReplaceB.UseVisualStyleBackColor = true;
             // 
-            // PlayerCheckBox
+            // checkBox1
             // 
-            PlayerCheckBox.FormattingEnabled = true;
-            PlayerCheckBox.Location = new Point(12, 162);
-            PlayerCheckBox.Name = "PlayerCheckBox";
-            PlayerCheckBox.Size = new Size(120, 94);
-            PlayerCheckBox.TabIndex = 34;
+            checkBox1.AutoSize = true;
+            checkBox1.BackColor = SystemColors.ControlDark;
+            checkBox1.Location = new Point(315, 126);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(15, 14);
+            checkBox1.TabIndex = 36;
+            checkBox1.UseVisualStyleBackColor = false;
             // 
-            // BotCheckBox
+            // checkBox2
             // 
-            BotCheckBox.FormattingEnabled = true;
-            BotCheckBox.Location = new Point(174, 162);
-            BotCheckBox.Name = "BotCheckBox";
-            BotCheckBox.SelectionMode = SelectionMode.None;
-            BotCheckBox.Size = new Size(120, 94);
-            BotCheckBox.TabIndex = 35;
+            checkBox2.AutoSize = true;
+            checkBox2.BackColor = SystemColors.ControlDark;
+            checkBox2.Location = new Point(417, 126);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(15, 14);
+            checkBox2.TabIndex = 37;
+            checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.BackColor = SystemColors.ControlDark;
+            checkBox3.Location = new Point(519, 126);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(15, 14);
+            checkBox3.TabIndex = 38;
+            checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.BackColor = SystemColors.ControlDark;
+            checkBox4.Location = new Point(621, 126);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(15, 14);
+            checkBox4.TabIndex = 39;
+            checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.BackColor = SystemColors.ControlDark;
+            checkBox5.Location = new Point(723, 126);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(15, 14);
+            checkBox5.TabIndex = 40;
+            checkBox5.UseVisualStyleBackColor = false;
+            // 
+            // PlayerCard1
+            // 
+            PlayerCard1.Location = new Point(315, 12);
+            PlayerCard1.Name = "PlayerCard1";
+            PlayerCard1.Size = new Size(96, 128);
+            PlayerCard1.TabIndex = 41;
+            PlayerCard1.TabStop = false;
+            // 
+            // PlayerCard2
+            // 
+            PlayerCard2.Location = new Point(417, 12);
+            PlayerCard2.Name = "PlayerCard2";
+            PlayerCard2.Size = new Size(96, 128);
+            PlayerCard2.TabIndex = 42;
+            PlayerCard2.TabStop = false;
+            // 
+            // PlayerCard3
+            // 
+            PlayerCard3.Location = new Point(519, 12);
+            PlayerCard3.Name = "PlayerCard3";
+            PlayerCard3.Size = new Size(96, 128);
+            PlayerCard3.TabIndex = 43;
+            PlayerCard3.TabStop = false;
+            // 
+            // PlayerCard4
+            // 
+            PlayerCard4.Location = new Point(621, 12);
+            PlayerCard4.Name = "PlayerCard4";
+            PlayerCard4.Size = new Size(96, 128);
+            PlayerCard4.TabIndex = 44;
+            PlayerCard4.TabStop = false;
+            // 
+            // PlayerCard5
+            // 
+            PlayerCard5.Location = new Point(723, 12);
+            PlayerCard5.Name = "PlayerCard5";
+            PlayerCard5.Size = new Size(96, 128);
+            PlayerCard5.TabIndex = 45;
+            PlayerCard5.TabStop = false;
+            // 
+            // BotCard5
+            // 
+            BotCard5.Location = new Point(723, 301);
+            BotCard5.Name = "BotCard5";
+            BotCard5.Size = new Size(96, 128);
+            BotCard5.TabIndex = 50;
+            BotCard5.TabStop = false;
+            // 
+            // BotCard4
+            // 
+            BotCard4.Location = new Point(621, 301);
+            BotCard4.Name = "BotCard4";
+            BotCard4.Size = new Size(96, 128);
+            BotCard4.TabIndex = 49;
+            BotCard4.TabStop = false;
+            // 
+            // BotCard3
+            // 
+            BotCard3.Location = new Point(519, 301);
+            BotCard3.Name = "BotCard3";
+            BotCard3.Size = new Size(96, 128);
+            BotCard3.TabIndex = 48;
+            BotCard3.TabStop = false;
+            // 
+            // BotCard2
+            // 
+            BotCard2.Location = new Point(417, 301);
+            BotCard2.Name = "BotCard2";
+            BotCard2.Size = new Size(96, 128);
+            BotCard2.TabIndex = 47;
+            BotCard2.TabStop = false;
+            // 
+            // BotCard1
+            // 
+            BotCard1.Location = new Point(315, 301);
+            BotCard1.Name = "BotCard1";
+            BotCard1.Size = new Size(96, 128);
+            BotCard1.TabIndex = 46;
+            BotCard1.TabStop = false;
             // 
             // GameForm
             // 
@@ -201,9 +324,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(784, 561);
-            Controls.Add(BotCheckBox);
-            Controls.Add(PlayerCheckBox);
+            ClientSize = new Size(858, 441);
+            Controls.Add(checkBox5);
+            Controls.Add(checkBox4);
+            Controls.Add(checkBox3);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
+            Controls.Add(BotCard5);
+            Controls.Add(BotCard4);
+            Controls.Add(BotCard3);
+            Controls.Add(BotCard2);
+            Controls.Add(BotCard1);
+            Controls.Add(PlayerCard5);
+            Controls.Add(PlayerCard4);
+            Controls.Add(PlayerCard3);
+            Controls.Add(PlayerCard2);
+            Controls.Add(PlayerCard1);
             Controls.Add(ReplaceB);
             Controls.Add(BotCash);
             Controls.Add(RaiseValue);
@@ -223,6 +359,16 @@
             Text = "Draw Poker";
             FormClosed += GameForm_FormClosed;
             Load += Form_Load;
+            ((System.ComponentModel.ISupportInitialize)PlayerCard1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PlayerCard5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BotCard1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -246,12 +392,24 @@
         private Label label13;
         private Label Bank;
         private TextBox RaiseValue;
-        public ImageList playerHand;
         private Label PlayerCash;
         private Label PlayerName;
         private Label BotCash;
         private Button ReplaceB;
-        private CheckedListBox PlayerCheckBox;
-        private CheckedListBox BotCheckBox;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox3;
+        private CheckBox checkBox4;
+        private CheckBox checkBox5;
+        private PictureBox PlayerCard1;
+        private PictureBox PlayerCard2;
+        private PictureBox PlayerCard3;
+        private PictureBox PlayerCard4;
+        private PictureBox PlayerCard5;
+        private PictureBox BotCard5;
+        private PictureBox BotCard4;
+        private PictureBox BotCard3;
+        private PictureBox BotCard2;
+        private PictureBox BotCard1;
     }
 }

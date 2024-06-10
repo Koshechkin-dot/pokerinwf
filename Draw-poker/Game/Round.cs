@@ -1,4 +1,5 @@
 ﻿using Draw_poker.Core.CardsLogic;
+using System;
 
 namespace Draw_poker.Game
 {
@@ -46,20 +47,25 @@ namespace Draw_poker.Game
             {
                 await Trade();
             }
-            return;
         }
         public async Task Replacement()
         {
             await awaiter.ReplacementTurnAwaiter();
 
-            var indexes = Players[0].CheckedListBox.CheckedIndices.Cast<int>().ToList();
-            foreach(var index in indexes)
+            List <CheckBox> playerControls = GameProcess.Instance.ContainerClass.PlayerBox;
+            for (int i = 0; i < playerControls.Count(); i++)
             {
-                Players[0].ReplaceCard(Deck.GetCard(), index);
+                if (playerControls[i].Checked)
+                {
+                    Players[0].ReplaceCard(Deck.GetCard(), i);
+                    playerControls[i].Checked = false;
+                }
             }
         }
         public async Task Showdown()
         {
+            Players[1].ShowCards();
+            await Task.Delay(5000);
             WinnerRecognizer recognizer = new WinnerRecognizer();
             var result = recognizer.Recognize(Players.Select(x => x.Player).ToList());
             int cashForWinners;
@@ -96,7 +102,15 @@ namespace Draw_poker.Game
                 {
                     Card card = Deck.GetCard();
                     plr.AddCard(card);
-                    plr.CheckedListBox.Items.Add(card.Value.ToString() + "Of" + card.Suit.ToString());
+                    if (!plr.IsBot)
+                    {
+                        plr.PictureBoxes[i].Image = ImageRepository.GetCardImage(card);
+                    }
+                    else
+                    {
+                        plr.PictureBoxes[i].Image = ImageRepository.GetCardBack();
+                    }
+
                 }
             }
         }
